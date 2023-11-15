@@ -1,7 +1,24 @@
-import React from 'react'
+import React from 'react';
+import INavLinks from '@/app/_types/INavLinks';
+import { NavbarDesktop } from './Navbar/NavbarDesktop';
+import { NavbarMobile } from './Navbar/NavbarMobile';
+import { BurgerMenuProvider } from '@/app/_providers/BurgermenuContext';
 
 export const Header = () => {
-  return (
-    <div>Header</div>
-  )
-}
+	const navLinks: INavLinks[] = [
+		{ name: 'Acasa', href: '/' },
+		{ name: 'Despre noi', href: '/despre-noi' },
+		{ name: 'Servicii', href: '/servicii' },
+		{ name: 'Portofoliu', href: '/portofoliu' },
+		{ name: 'Contact', href: '/contact' },
+	];
+
+	return (
+		<header className=' p-2  border-b border-accentGrey border-solid desktop:py-[1.88rem]'>
+			<NavbarDesktop navLinks={navLinks} />
+			<BurgerMenuProvider>
+				<NavbarMobile navLinks={navLinks} />
+			</BurgerMenuProvider>
+		</header>
+	);
+};

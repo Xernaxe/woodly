@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,4 +10,10 @@
 	box-sizing: border-box;
 	color: #000;
 	font-family: 'Inter';
+}
+
+@layer components {
+	.section {
+		@apply flex flex-col mx-[5%] my-10 desktopL:mx-[12%] desktopL:my-[5rem];
+	}
 }

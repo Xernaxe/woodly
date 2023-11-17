@@ -5,7 +5,7 @@ import { HomeSectionTag } from '../_globals/HomeSectionTag/HomeSectionTag';
 
 export const Hero = () => {
 	return (
-		<section className='section'>
+		<section className='section pt-20 relative'>
 			<div className=' flex items-center gap-2'>
 				<p className='text-white font-light uppercase text-xs min-w-max mobile:text-[clamp(.75rem,3.2vw,1rem)]'>
 					Firma de amenajari interioare
@@ -30,9 +30,9 @@ export const Hero = () => {
 				<MainButton href='/' text='Vezi Portofoliul' className='text-white max-[330px]:text-[0.7rem]'/>
 			</div>
 
-			<div className='absolute -z-10 top-0 left-0'>
+			<div className='absolute -z-10 top-0 left-0 h-full'>
 				<Image
-					className='object-cover max-w-screen h-[75vh]'
+					className='object-cover max-w-screen h-full'
 					src={'/heroImg.png'}
 					width={1440}
 					height={1080}

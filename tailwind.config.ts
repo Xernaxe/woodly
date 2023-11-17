@@ -18,6 +18,7 @@ const config: Config = {
 				"accentGreen": "#04B939",
 				"accentBlue": "#1C89EF",
 				"accentGrey": "#ffffff33",
+				"textGrey": "#414E62"
 			},
 			screens: {
 				"mobile": "375px",

@@ -5,7 +5,7 @@ import React from 'react';
 
 export const NavbarDesktop = ({ navLinks }: { navLinks: INavLinks[] }) => {
 	return (
-		<nav className='hidden justify-evenly items-center desktop:flex'>
+		<nav className='hidden justify-between items-center desktop:flex'>
 			<a href='' className='relative flex w-[8.3rem] h-[2.25rem]'>
 				<Image src={'./logo.svg'} alt='' fill={true} className='object-cover' />
 			</a>

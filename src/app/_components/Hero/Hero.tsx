@@ -5,7 +5,7 @@ import { MainButton } from '../_globals/MainButton/MainButton';
 export const Hero = () => {
 	return (
 		<section className='sectionP max-desktop:pt-20 relative desktop:pt-32 desktop:h-screen desktop:justify-center'>
-			<div className='relative tablet:ml-10 tablet:w-[65%] tablet:before:w-[1px] tablet:before:h-full tablet:before:bg-accentBlue tablet:before:flex tablet:before:absolute tablet:before:left-0 tablet:before:-translate-x-10 desktop:ml-20 desktop:w-1/2'>
+			<div className='relative tablet:ml-10 tablet:w-[65%] tablet:before:w-[1px] tablet:before:h-full tablet:before:bg-accentBlue tablet:before:flex tablet:before:absolute tablet:before:left-0 tablet:before:-translate-x-10 desktop:before:-left-10 desktop:ml-20 desktop:w-1/2'>
 				<div className=' flex items-center gap-2'>
 					<p className='text-white font-light uppercase text-xs min-w-max tablet:letter-spacing'>
 						Firma de amenajari interioare

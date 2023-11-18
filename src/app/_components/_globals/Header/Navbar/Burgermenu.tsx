@@ -8,6 +8,8 @@ export const Burgermenu = () => {
 
 	const toggleBurgerMenu = () => {
 		setIsBurgerMenuOpen(!isBurgerMenuOpen);
+		document.querySelector('body')?.classList.toggle('overflowNone');
+		document.querySelector('html')?.classList.toggle('overflowNone');
 	};
 
 	return (

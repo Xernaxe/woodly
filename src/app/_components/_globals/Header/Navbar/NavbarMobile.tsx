@@ -17,7 +17,7 @@ export const NavbarMobile = ({ navLinks }: { navLinks: INavLinks[] }) => {
 			<Burgermenu />
 
 			{isBurgerMenuOpen && (
-				<ul className='flex flex-col justify-center absolute z-10 w-screen h-screen top-0 left-0 bg-black'>
+				<ul className='flex flex-col justify-center fixed z-10 w-screen h-screen top-0 left-0 bg-black'>
 					{navLinks.map((link) => {
 						return (
 							<li

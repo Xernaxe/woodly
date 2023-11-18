@@ -2,16 +2,20 @@ import React from 'react';
 import Image from 'next/image';
 
 export const ServicesCards = () => {
-	const checks = [
-		'Nevoile estetice',
-		'Cerintele de depozitare',
-		'Constrangerile tehnice',
-		'Reguli de ergonomie',
-		'Forma spatiului',
-		'Buget',
-	];
-
 	const cards = [
+		{
+			title: 'Consultanta',
+			desc: 'Echipa noastra ofera consultanta in alegerea designului in functie de nevoile si gusturile dumneavoastra. Pentru ca casa este unul dintre cele mai dragi locuri, trebuie sa stabilim impreuna aspectele care tin de functionalitatea si aspectul acesteia. Realizarea unui proiect adecvat necesita in primul rand un consultant cu experienta si cu bune abilitati de comunicare. Pentru reusita proiectului este de asemenea necesara determinarea compromisului ideal dintre:',
+			imgSrc: '/servicesCard_2.png',
+			checks: [
+				'Nevoile estetice',
+				'Cerintele de depozitare',
+				'Constrangerile tehnice',
+				'Reguli de ergonomie',
+				'Forma spatiului',
+				'Buget',
+			],
+		},
 		{
 			title: 'Proiectare',
 			desc: 'Designerii nostri sunt pregatit sa ofere solutii inteligente pentru a crea un spatiu armonios si ergonomic in casa dumneavoastra. Schita se face asistata de calculator, in timp real. Veti vedea in 3D mobilierul dumneavoastra inainte de a-l comanda. Tot ce aveti de facut este sa aduceti o schita a spatiului in care sa fie figurate dimensiunile incaperii, pozitionarea usilor, ferestrelor si a racordurilor la utilitati. Pentru ca cerintele sa fie reflectate in configuratia finala a mobilierului, colaborarea cu dumneavoastra in faza de proiectare este foarte importanta.',
@@ -31,52 +35,29 @@ export const ServicesCards = () => {
 
 	return (
 		<section className='sectionM gap-10'>
-			<div className='flex flex-col-reverse gap-2'>
-				<div className=''>
-					<h2 className=' text-4xl font-light leading-snug'>Consultanta</h2>
-					<p>
-						Echipa noastra ofera consultanta in alegerea designului in functie
-						de nevoile si gusturile dumneavoastra. Pentru ca casa este unul
-						dintre cele mai dragi locuri, trebuie sa stabilim impreuna aspectele
-						care tin de functionalitatea si aspectul acesteia. Realizarea unui
-						proiect adecvat necesita in primul rand un consultant cu experienta
-						si cu bune abilitati de comunicare. Pentru reusita proiectului este
-						de asemenea necesara determinarea compromisului ideal dintre:
-					</p>
-					<div className=''>
-						{checks.map((check) => {
-							return (
-								<div className='flex' key={check}>
-									<Image
-										src={'/check.svg'}
-										alt='Check'
-										width={24}
-										height={24}
-									/>
-									<p>{check}</p>
-								</div>
-							);
-						})}
-					</div>
-				</div>
-				<div className='relative top-0 left-0 w-full h-[90vw]'>
-					<Image
-						src={'/servicesCard_1.png'}
-						alt={'@TODO'}
-						fill
-						className='object-cover'
-					/>
-				</div>
-			</div>
-
 			{cards.map((card) => {
 				return (
 					<div className='flex flex-col-reverse gap-2'>
-						<div className=''>
+						<div className='flex flex-col gap-2'>
 							<h2 className=' text-4xl font-light leading-snug'>
 								{card.title}
 							</h2>
-							<p>{card.desc}</p>
+							<p className=''>{card.desc}</p>
+							<div className='flex flex-col'>
+								{card.checks?.map((check) => {
+									return (
+										<div className='flex gap-2' key={check}>
+											<Image
+												src={'/check.svg'}
+												alt='Check'
+												width={24}
+												height={24}
+											/>
+											<p>{check}</p>
+										</div>
+									);
+								})}
+							</div>
 						</div>
 						<div className='relative top-0 left-0 w-full h-[90vw]'>
 							<Image

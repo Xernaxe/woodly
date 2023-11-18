@@ -3,7 +3,7 @@ import React from 'react';
 
 export const ServicesHero = () => {
 	return (
-		<section className='section pt-20 relative bg-black'>
+		<section className='sectionP pt-20 relative bg-black'>
 			<SectionHeader className='text-white text-center' text='Servicii' />
 			<p className='text-white leading-relaxed font-light text-sm text-center'>
 				Un mobilier de calitate trebuie însoțit întotdeauna de servicii de

@@ -3,7 +3,7 @@ import React from 'react';
 
 export const AboutCards = () => {
 	return (
-		<section className='section gap-6'>
+		<section className='sectionM gap-6'>
 			<div className='flex flex-col-reverse gap-2'>
 				<div className=''>
 					<p className=''>

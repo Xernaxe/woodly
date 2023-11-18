@@ -22,6 +22,7 @@ const config: Config = {
 			},
 			screens: {
 				"mobile": "375px",
+				"mobileLarge": "425px",
 				"tablet": "768px",
 				"desktop": "1024px",
 				"desktopL": "1440px"

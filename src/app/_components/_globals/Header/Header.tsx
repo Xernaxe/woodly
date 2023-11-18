@@ -14,7 +14,7 @@ export const Header = () => {
 	];
 
 	return (
-		<header className='absolute top-0 left-0 w-screen py-2 px-6  desktop:border-b border-accentGrey border-solid desktop:py-[1.88rem]'>
+		<header className='absolute top-0 left-0 w-screen py-2 px-6 tablet:px-[8%] desktop:border-b border-accentGrey border-solid desktop:py-[1.88rem]'>
 			<NavbarDesktop navLinks={navLinks} />
 			<BurgerMenuProvider>
 				<NavbarMobile navLinks={navLinks} />

@@ -8,7 +8,7 @@ export const Stats = () => {
 		{ title: 'Rata de satisfactie', stat: '99%' },
 	];
 	return (
-		<section className='section items-center gap-6'>
+		<section className='sectionM items-center gap-6'>
 			{statsCards.map((card) => {
 				return (
 					<div className='flex flex-col items-center' key={card.title}>

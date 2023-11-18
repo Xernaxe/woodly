@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export const AboutHero = () => {
 	return (
-		<section className='section pt-20 relative bg-black'>
+		<section className='sectionP pt-20 relative bg-black'>
 			<h3 className='uppercase text-xs text-center font-light [letter-spacing:0.144rem] text-white'>
 				Despre Noi
 			</h3>

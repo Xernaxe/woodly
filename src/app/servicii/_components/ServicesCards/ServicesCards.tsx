@@ -30,7 +30,7 @@ export const ServicesCards = () => {
 	];
 
 	return (
-		<section className='section gap-10'>
+		<section className='sectionM gap-10'>
 			<div className='flex flex-col-reverse gap-2'>
 				<div className=''>
 					<h2 className=' text-4xl font-light leading-snug'>Consultanta</h2>

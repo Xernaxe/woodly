@@ -12,7 +12,7 @@ export const MainButton = ({
 	className: string;
 }) => {
 	return (
-		<Link href={href} className={twMerge(className, 'uppercase w-full text-center border text-xs py-3 px-3 mobile:text-sm')}>
+		<Link href={href} className={twMerge(className, 'uppercase w-full text-center border text-xs py-3 px-3 max-w-[12.5rem] mobile:text-sm')}>
 			{text}
 		</Link>
 	);

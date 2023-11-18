@@ -13,7 +13,16 @@
 }
 
 @layer components {
-	.section {
-		@apply flex flex-col px-6 py-8 desktopL:px-[12%] desktopL:py-[5rem];
+
+	.sectionM {
+		@apply flex flex-col mx-6 my-8 tablet:mx-[8%] tablet:my-[7rem] desktopL:mx-[12%] desktopL:my-[5rem];
+	}
+	.sectionP {
+		@apply flex flex-col px-6 py-8 tablet:px-[8%] tablet:py-[7rem] desktopL:px-[12%] desktopL:py-[5rem];
+
+	}
+
+	.letter-spacing {
+		letter-spacing: 0.144rem;
 	}
 }

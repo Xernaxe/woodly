@@ -1,16 +1,14 @@
 import React from 'react';
 import { SectionHeader } from '../_globals/SectionHeader/SectionHeader';
 import { MainButton } from '../_globals/MainButton/MainButton';
+import { HomeSectionTag } from '../_globals/HomeSectionTag/HomeSectionTag';
 
 export const Who = () => {
 	return (
 		<section className='section'>
-			<SectionHeader text={'Cine suntem'} />
-			<h3 className='text-2xl font-light pt-4'>
-				Experți în amenajări interioare de înaltă clasă, cu sediul în București,
-				România
-			</h3>
-			<div className=' text-xs leading-loose text-textGrey py-6'>
+			<HomeSectionTag text='Cine Suntem'/>
+			<SectionHeader text={'Experți în amenajări interioare de înaltă clasă, cu sediul în București, România'} />
+			<div className=' text-xs leading-loose text-textGrey pb-6'>
 				<p className='text-inherit'>
 					La Woodly, ne dedicam misiunii de a transforma spatiul tau intr-un
 					mediu personalizat, adaptat stilului si nevoilor tale. Cu o vasta

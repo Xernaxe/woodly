@@ -1,10 +1,10 @@
 import React from 'react';
+import { twMerge } from 'tailwind-merge';
 
-export const SectionHeader = ({ text }: { text: string }) => {
+export const SectionHeader = ({ text, className }: { text: string, className?:string }) => {
 	return (
-		<div className='flex items-center gap-3'>
-			<h2 className='uppercase text-sm font-light leading-snug [letter-spacing:0.144rem]'>{text}</h2>
-			<span className='flex h-[1px] w-[25vw] max-w-1/2 bg-accentGreen'></span>
+		<div className=''>
+			<h2 className={twMerge('text-2xl font-light py-4', className)}>{text}</h2>
 		</div>
 	);
 };

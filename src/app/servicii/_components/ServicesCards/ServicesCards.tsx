@@ -34,16 +34,16 @@ export const ServicesCards = () => {
 	];
 
 	return (
-		<section className='sectionM gap-10'>
+		<section className='sectionM gap-10 tablet:gap-15 desktop:gap-20'>
 			{cards.map((card) => {
 				return (
-					<div className='flex flex-col-reverse gap-2'>
-						<div className='flex flex-col gap-2'>
+					<div className='flex flex-col-reverse gap-2 desktop:flex-row desktop:justify-between'>
+						<div className='flex flex-col gap-2 desktop:w-5/12 desktop:justify-center'>
 							<h2 className=' text-4xl font-light leading-snug'>
 								{card.title}
 							</h2>
-							<p className=''>{card.desc}</p>
-							<div className='flex flex-col'>
+							<p className='text-textGrey max-w-[27.875rem]'>{card.desc}</p>
+							<div className='flex flex-col tablet:grid tablet:grid-cols-2 tablet:gap-3'>
 								{card.checks?.map((check) => {
 									return (
 										<div className='flex gap-2' key={check}>
@@ -53,13 +53,13 @@ export const ServicesCards = () => {
 												width={24}
 												height={24}
 											/>
-											<p>{check}</p>
+											<p className='text-textGrey leading-relaxed'>{check}</p>
 										</div>
 									);
 								})}
 							</div>
 						</div>
-						<div className='relative top-0 left-0 w-full h-[90vw]'>
+						<div className='relative top-0 left-0 w-full h-[90vw] tablet:h-[60vw]  desktop:aspect-square desktop:h-auto desktop:w-1/2'>
 							<Image
 								src={card.imgSrc}
 								alt={'@TODO'}

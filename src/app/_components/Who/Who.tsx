@@ -2,6 +2,7 @@ import React from 'react';
 import { SectionHeader } from '../_globals/SectionHeader/SectionHeader';
 import { MainButton } from '../_globals/MainButton/MainButton';
 import { HomeSectionTag } from '../_globals/HomeSectionTag/HomeSectionTag';
+import { WhoSlider } from './WhoSlider/WhoSlider';
 
 export const Who = () => {
 	return (
@@ -21,7 +22,7 @@ export const Who = () => {
 					/>
 				</div>
 			</div>
-			<div className=' text-xs leading-loose text-textGrey pb-6 desktop:text-base desktop:flex desktop:gap-10'>
+			<div className=' text-xs leading-loose text-textGrey  desktop:text-base desktop:flex desktop:gap-10'>
 				<p className='text-inherit desktop:w-1/2'>
 					La Woodly, ne dedicam misiunii de a transforma spatiul tau intr-un
 					mediu personalizat, adaptat stilului si nevoilor tale. Cu o vasta
@@ -35,13 +36,15 @@ export const Who = () => {
 				</p>
 			</div>
 
-			<div className='w-1/2 desktop:hidden'>
+			<div className='w-1/2 py-6 desktop:hidden'>
 				<MainButton
 					href='/'
 					text={'Vezi portofoliu'}
 					className='bg-black text-white border-white flex justify-center'
 				/>
 			</div>
+
+			<WhoSlider/>
 		</section>
 	);
 };

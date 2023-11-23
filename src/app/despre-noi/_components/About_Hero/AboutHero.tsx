@@ -23,10 +23,10 @@ export const AboutHero = () => {
 
 			<div className='pt-4'>
 				<div className='relative h-[90vw] desktop:h-[30vw]'>
-					<div className='relative  w-full h-full desktop:aspect-square'>
+					<div className='relative  w-full aspect-square'>
 						<Image src={'/about_1.png'} alt={'@TODO: Change'} fill />
 					</div>
-					<div className='hidden  w-full h-full desktop:aspect-square desktop:block'>
+					<div className='hidden  w-full aspect-square desktop:block'>
 						<Image src={'/about_2.png'} alt={'@TODO: Change'} fill />
 					</div>
 				</div>

@@ -3,7 +3,7 @@ import React from 'react';
 
 export const AboutCards = () => {
 	return (
-		<section className='sectionM gap-6'>
+		<section className='sectionM gap-8'>
 			<div className='flex flex-col-reverse gap-2'>
 				<div className=''>
 					<p className=''>
@@ -22,7 +22,7 @@ export const AboutCards = () => {
 					</p>
 				</div>
 
-				<div className='relative top-0 left-0 w-full h-[90vw]'>
+				<div className='relative top-0 left-0 w-full aspect-square'>
 					<Image
 						src={'/aboutCard_1.png'}
 						alt={'@TODO'}
@@ -48,7 +48,7 @@ export const AboutCards = () => {
 					</p>
 				</div>
 
-				<div className='relative top-0 left-0 w-full h-[90vw]'>
+				<div className='relative top-0 left-0 w-full aspect-square'>
 					<Image
 						src={'/aboutCard_2.png'}
 						alt={'@TODO'}
@@ -76,7 +76,7 @@ export const AboutCards = () => {
 					</p>
 				</div>
 
-				<div className='relative top-0 left-0 w-full h-[90vw]'>
+				<div className='relative top-0 left-0 w-full aspect-square'>
 					<Image
 						src={'/aboutCard_3.png'}
 						alt={'@TODO'}

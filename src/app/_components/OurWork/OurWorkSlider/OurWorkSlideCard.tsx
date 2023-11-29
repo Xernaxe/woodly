@@ -15,7 +15,7 @@ export const OurWorkSlideCard = () => {
 
                     <div className="hidden absolute top-0 left-0 w-full h-full bg-[linear-gradient(0deg,_rgba(0,0,0,0.30)_0%,_rgba(0,0,0,0.30)_100%),_linear-gradient(270deg,rgba(0,0,0,0.00)_51.25%,_#000_117.28%)] desktop:flex"></div>
 				</div>
-				<div className='flex flex-col gap-2 tablet:p-2 desktop:absolute desktop:top-1/2 desktop:-translate-y-1/2 desktop:w-1/2 desktop:left-5 desktop:z-10 desktopL:w-[37%] desktopL:left-[20%]'>
+				<div className='flex flex-col gap-2 p-2 desktop:absolute desktop:top-1/2 desktop:-translate-y-1/2 desktop:w-1/2 desktop:left-5 desktop:z-10 desktopL:w-[37%] desktopL:left-[20%]'>
 					<div className='flex items-center gap-3'>
 						<p className=' text-xs font-light uppercase letter-spacing text-white'>
 							01

@@ -6,11 +6,11 @@ import { OurWorkSlider } from './OurWorkSlider/OurWorkSlider';
 export const OurWork = () => {
 	return (
 		<section className='paddingsY flex flex-col items-center bg-black '>
-			<h3 className='paddingsX uppercase text-xs font-light [letter-spacing:0.144rem] text-white'>
+			<h3 className='paddingsX uppercase text-xs font-light letter-spacing text-white desktop:text-sm'>
 				Portofoliul nostru
 			</h3>
 			<SectionHeader
-				className='text-white text-center desktop:pt-12'
+				className='text-white text-center px-8 desktop:pt-12'
 				text='Descoperiți Ultimele Noastre Lucrari'
 			/>
 			<p className='paddingsX text-white leading-relaxed font-light text-sm desktop:leading-loose desktop:w-9/12 desktop:px-0 desktopL:w-[52%]'>

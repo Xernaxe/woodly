@@ -6,6 +6,8 @@ import Image from 'next/image';
 import { OurWorkSlideCard } from './OurWorkSlideCard';
 
 export const OurWorkSlider = () => {
+	const workSlides = ['@TOOD', '@TOOD', '@TOOD'];
+
 	const [emblaRef, emblaApi] = useEmblaCarousel();
 
 	const scrollPrev = useCallback(() => {
@@ -18,12 +20,12 @@ export const OurWorkSlider = () => {
 
 	return (
 		// @TODO:break into reusable components asapppppppppppppppppppppp
-		<div className='embla overflow-hidden w-full py-6'>
+		<div className='embla overflow-hidden w-full py-8'>
 			<div className='embla__viewport relative' ref={emblaRef}>
 				<div className='embla__container flex '>
-					<OurWorkSlideCard />
-					<OurWorkSlideCard />
-					<OurWorkSlideCard />
+					{workSlides.map((slide, index) => {
+						return <OurWorkSlideCard key={index} />;
+					})}
 				</div>
 				<div className='hidden absolute bottom-[20%] left-[20%] desktop:flex gap-12 h-5'>
 					<button className='embla__prev ' onClick={scrollPrev}>

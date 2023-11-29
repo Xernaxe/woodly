@@ -4,7 +4,7 @@ import { MainButton } from '../_globals/MainButton/MainButton';
 
 export const Hero = () => {
 	return (
-		<section className='sectionP max-desktop:pt-20 relative desktop:pt-32 desktop:h-screen desktop:justify-center desktopL:max-w-none'>
+		<section className='sectionP max-desktop:pt-20 relative desktop:pt-32 desktop:h-screen desktop:justify-center max-w-none max-h-[1200px]'>
 			<div className='relative tablet:ml-10 tablet:w-[65%] tablet:before:w-[1px] tablet:before:h-full tablet:before:bg-accentBlue tablet:before:flex tablet:before:absolute tablet:before:left-0 tablet:before:-translate-x-10 desktop:before:-left-10 desktop:ml-20  desktop:w-1/2'>
 				<div className=' flex items-center gap-2'>
 					<p className='text-white font-light uppercase text-xs min-w-max tablet:letter-spacing desktop:text-sm'>
@@ -39,9 +39,9 @@ export const Hero = () => {
 				</div>
 			</div>
 
-			<div className='absolute -z-10 top-0 left-0 h-full'>
+			<div className='absolute -z-10 top-0 left-0 h-full max-h-[1200px]'>
 				<Image
-					className='object-cover max-w-screen h-full desktop:w-screen desktop:h-screen'
+					className='object-cover max-w-screen h-full desktop:w-screen desktop:h-screen max-h-[1200px]'
 					src={'/heroImg.png'}
 					width={1440}
 					height={1080}

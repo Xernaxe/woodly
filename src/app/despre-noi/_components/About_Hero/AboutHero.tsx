@@ -5,8 +5,8 @@ import Image from 'next/image';
 export const AboutHero = () => {
 	return (
 		<section className='flex flex-col pt-20 relative bg-black desktop:pt-40 desktop:pb-0 '>
-			<div className='paddingsX m-auto desktop:w-10/12'>
-				<h3 className='uppercase text-xs text-center font-light [letter-spacing:0.144rem] text-white'>
+			<div className='paddingsX m-auto mb-10 desktop:w-10/12'>
+				<h3 className='uppercase text-xs text-center font-light [letter-spacing:0.144rem] text-white desktop:mb-4'>
 					Despre Noi
 				</h3>
 				<SectionHeader

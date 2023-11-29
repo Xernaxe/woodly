@@ -30,12 +30,16 @@ body {
 	.sectionPaddings {
 		@apply px-6 py-8 tablet:px-[8%] tablet:py-[7rem] desktopL:px-[12%] desktopL:py-[5rem];
 	}
+	
+	.marginsX {
+		@apply mx-6 tablet:mx-[8%] desktopL:mx-[12%]
+	}
 
 	.sectionM {
-		@apply flex flex-col mx-6 my-8 tablet:mx-[8%] tablet:my-[7rem] desktopL:mx-[12%] desktopL:my-[5rem] desktopL:max-w-[1094px];
+		@apply flex flex-col mx-6 my-8 tablet:mx-[8%] tablet:my-[7rem] desktopL:mx-[12%] desktopL:my-[5rem] max-w-[1094px];
 	}
 	.sectionP {
-		@apply flex flex-col sectionPaddings desktopL:max-w-[1094px];
+		@apply flex flex-col sectionPaddings max-w-[1094px];
 	}
 
 	.letter-spacing {

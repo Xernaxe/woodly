@@ -27,7 +27,7 @@ export const OurWorkSlider = () => {
 						return <OurWorkSlideCard key={index} />;
 					})}
 				</div>
-				<div className='hidden absolute bottom-[20%] left-[20%] desktop:flex gap-12 h-5'>
+				<div className='hidden absolute bottom-[20%] w-full left-[10%] desktopL:left-[50%]  desktopL:-translate-x-1/2 desktopL:w-1/2 max-w-[1094px] desktop:flex gap-12 h-5'>
 					<button className='embla__prev ' onClick={scrollPrev}>
 						<Image src={'/arrow_left.svg'} alt='prev' width={20} height={20} />
 					</button>

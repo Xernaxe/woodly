@@ -3,14 +3,31 @@ import React from 'react';
 import Image from 'next/image';
 
 export const AboutHero = () => {
+	const aboutHeroImage = () => {
+		return (
+			<div className='pb-4 paddingsX desktop:pb-0 desktop:paddingsX desktop:bg-[linear-gradient(0deg,_rgba(255,255,255,1)_0%,_rgba(255,255,255,1)_50%,_rgba(0,0,0,1)_50%,_rgba(0,0,0,1)_100%)]  desktop:translate-y-1'>
+				<div className='max-w-[1094px] w-full  desktop:m-auto'>
+					<div className='relative flex justify-center gap-8 '>
+						<div className='relative  w-full aspect-square max-w-[537px]'>
+							<Image src={'/about_1.png'} alt={'@TODO: Change'} fill />
+						</div>
+						<div className='hidden relative  w-full h-full aspect-square max-w-[537px] desktop:block'>
+							<Image src={'/about_2.png'} alt={'@TODO: Change'} fill />
+						</div>
+					</div>
+				</div>
+			</div>
+		);
+	};
+
 	return (
 		<section className='flex flex-col pt-20 relative bg-black desktop:pt-40 desktop:pb-0 '>
-			<div className='paddingsX m-auto mb-10 desktop:w-10/12'>
+			<div className='paddingsX m-auto mb-5 desktop:mb-10 desktop:w-10/12 desktopL:max-w-[1093px] desktopL:p-0 desktopL:w-auto desktopL:px-[8%]'>
 				<h3 className='uppercase text-xs text-center font-light [letter-spacing:0.144rem] text-white desktop:mb-4'>
 					Despre Noi
 				</h3>
 				<SectionHeader
-					className='text-white text-center desktop:text-5xl'
+					className='text-white text-center desktop:text-4xl'
 					text='Suntem condusi de pasiunea de a crea design interior care face diferenta'
 				/>
 				<p className='text-white leading-relaxed font-light text-sm text-center'>
@@ -21,18 +38,7 @@ export const AboutHero = () => {
 				</p>
 			</div>
 
-			<div className=' py-4 desktop:pb-0'>
-				<div className='desktop:bg-[linear-gradient(0deg,_rgba(255,255,255,1)_0%,_rgba(255,255,255,1)_50%,_rgba(0,0,0,1)_50%,_rgba(0,0,0,1)_100%)] desktop:translate-y-1'>
-					<div className='paddingsX relative flex gap-8 h-[90vw] desktop:h-[30vw]'>
-						<div className='relative  w-full aspect-square'>
-							<Image src={'/about_1.png'} alt={'@TODO: Change'} fill />
-						</div>
-						<div className='hidden relative  w-full aspect-square desktop:block'>
-							<Image src={'/about_2.png'} alt={'@TODO: Change'} fill />
-						</div>
-					</div>
-				</div>
-			</div>
+			{aboutHeroImage()}
 		</section>
 	);
 };

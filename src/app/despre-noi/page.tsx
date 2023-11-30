@@ -7,8 +7,10 @@ export default function Home() {
 	return (
 		<>
 			<AboutHero />
-			<Stats />
-			<AboutCards />
+			<div className='flex flex-col items-center'>
+				<Stats />
+				<AboutCards />
+			</div>
 		</>
 	);
 }

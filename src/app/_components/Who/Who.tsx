@@ -22,14 +22,14 @@ export const Who = () => {
 					/>
 				</div>
 			</div>
-			<div className=' text-xs leading-loose text-textGrey  desktop:text-base desktop:flex desktop:gap-10'>
-				<p className='text-inherit desktop:w-1/2'>
+			<div className=' text-xs leading-loose text-textGrey  desktop:text-base desktop:leading-relaxed desktop:flex desktop:gap-10 desktop:pt-4'>
+				<p className='text-inherit desktop:w-7/12'>
 					La Woodly, ne dedicam misiunii de a transforma spatiul tau intr-un
 					mediu personalizat, adaptat stilului si nevoilor tale. Cu o vasta
 					experienta in proiectare si executie, am castigat respectul clientilor
 					nostri prin transparenta si încredere.
 				</p>
-				<p className='text-inherit desktop:w-1/2'>
+				<p className='text-inherit desktop:w-6/12'>
 					Cu o echipa de specialisti în amenajari, punem la dispozitie cele mai
 					calitative materiale si tehnologii pentru a asigura ca fiecare proiect
 					devine o capodopera.

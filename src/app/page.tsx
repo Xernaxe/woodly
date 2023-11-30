@@ -8,7 +8,7 @@ export default function Home() {
 	return (
 		<>
 			<Hero />
-			<div className='flex flex-col items-center'>
+			<div className='desktopL:flex flex-col items-center'>
 				<Who />
 				<OurServices />
 			</div>

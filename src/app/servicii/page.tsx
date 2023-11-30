@@ -6,7 +6,7 @@ export default function Home() {
 	return (
 		<>
 			<ServicesHero />
-			<div className='flex flex-col items-center'>
+			<div className='desktopL:flex flex-col items-center'>
 				<ServicesCards />
 			</div>
 		</>

@@ -7,7 +7,7 @@ export default function Home() {
 	return (
 		<>
 			<AboutHero />
-			<div className='flex flex-col items-center'>
+			<div className='desktopL:flex flex-col items-center'>
 				<Stats />
 				<AboutCards />
 			</div>

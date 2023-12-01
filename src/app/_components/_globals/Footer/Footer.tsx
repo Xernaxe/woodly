@@ -15,7 +15,7 @@ export const Footer = () => {
 	return (
 		<footer className='border-t border-accentGrey p-8 bg-black px-[5%] py-10 desktopL:px-[12%] desktopL:py-[5rem]'>
 			<div className='flex flex-col items-center max-w-[1094px] m-auto gap-10 tablet:flex-row tablet:items-start tablet:justify-between'>
-				<a href='' className='relative flex w-[8.3rem] h-[2.25rem]'>
+				<a href='/' className='relative flex w-[8.3rem] h-[2.25rem]'>
 					<Image
 						src={'./logo.svg'}
 						alt=''

@@ -17,7 +17,7 @@ export const Footer = () => {
 			<div className='flex flex-col items-center maxW m-auto gap-10 tablet:flex-row tablet:items-start tablet:justify-between'>
 				<a href='/' className='relative flex w-[8.3rem] h-[2.25rem]'>
 					<Image
-						src={'./logo.svg'}
+						src={'/logo.svg'}
 						alt=''
 						fill={true}
 						className='object-cover'

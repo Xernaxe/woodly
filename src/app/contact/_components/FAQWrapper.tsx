@@ -39,7 +39,7 @@ export const FAQWrapper = () => {
 					</p>
 				</div>
 				{FAQCards.map((card, index) => (
-					<FAQCard card={card} index={index} arrLength={FAQCards.length} />
+					<FAQCard key={card.title} card={card} index={index} arrLength={FAQCards.length} />
 				))}
 			</div>
 		</section>

@@ -7,10 +7,12 @@ export const FAQCard = ({
 	card,
 	index,
 	arrLength,
+	key,
 }: {
 	card: IFAQ;
 	index: number;
 	arrLength: number;
+	key: React.Key
 }) => {
 	const [isOpen, setIsOpen] = useState(false);
 	const showDivider = index + 1 !== arrLength;

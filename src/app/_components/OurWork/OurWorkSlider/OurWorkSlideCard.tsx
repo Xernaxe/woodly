@@ -4,7 +4,7 @@ import Image from 'next/image';
 export const OurWorkSlideCard = () => {
 	return (
 		<div className='embla__slide flex flex-col relative flex-[0_0_80%] min-w-0 max-h-[537px] aspect-square mx-2  tablet:flex-[0_0_70%] desktop:flex-[0_0_100%] desktop:aspect-video desktop:flex-row-reverse'>
-			<div className='flex flex-col w-full h-full gap-2 desktop:flex-row-reverse desktop:mx-[8%] desktopL:mx-auto max-w-[1094px]'>
+			<div className='flex flex-col w-full h-full gap-2 desktop:flex-row-reverse desktop:mx-[8%] desktopL:mx-auto maxW'>
 				<div className='relative w-full h-full max-w-[537px] max-h-[537px] tablet:h-4/6 desktop:absolute desktop:w-[60%] desktop:h-full'>
 					<Image
 						src={'/WhoCarousel_1.png'}

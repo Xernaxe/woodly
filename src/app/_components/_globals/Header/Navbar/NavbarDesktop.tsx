@@ -23,7 +23,6 @@ export const NavbarDesktop = ({ navLinks }: { navLinks: INavLinks[] }) => {
 							>
 								{link.name}
 							</Link>
-							{/* TODO: Fix transition */}
 							<span className='hidden absolute content-none bottom-0 w-0 h-0.5 bg-accentGreen transition-all ease-in-out group-hover:block group-hover:w-full'></span>
 						</li>
 					);
@@ -31,7 +30,7 @@ export const NavbarDesktop = ({ navLinks }: { navLinks: INavLinks[] }) => {
 			</ul>
 
 			<div className='flex gap-3'>
-				<Image src={'./phone.svg'} alt='' width={24} height={24} />
+				<Image src={'./phone.svg'} alt='Phone number' width={24} height={24} />
 				<p className='font-outfit text-white'>+40 755 636 187</p>
 			</div>
 		</nav>

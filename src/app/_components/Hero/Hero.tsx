@@ -30,12 +30,12 @@ export const Hero = () => {
 						<MainButton
 							href='/contact'
 							text='Contacteaza-ne'
-							className='bg-white max-[330px]:text-[0.7rem] mobileLarge:w-max'
+							className='bg-white max-[330px]:text-[0.65rem] mobileLarge:w-max'
 						/>
 						<MainButton
 							href='/'
 							text='Vezi Portofoliul'
-							className='text-white max-[330px]:text-[0.7rem] mobileLarge:w-max'
+							className='text-white max-[335px]:text-[0.65rem] mobileLarge:w-max'
 						/>
 					</div>
 				</div>

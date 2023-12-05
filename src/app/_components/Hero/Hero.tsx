@@ -18,7 +18,7 @@ export const Hero = () => {
 						<h1 className='text-white font-light text-2xl leading-snug mobile:text-[clamp(1.5rem,4.5vw,3rem)] desktop:text-4xl desktopL:text-[clamp(2.5rem,3.3vw,3rem)] desktop:leading-[1.3]'>
 							Amenajam locuri in care fiecare detaliu te inspira.
 						</h1>
-						<p className='text-white font-light text-xs leading-relaxed mobile:text-[clamp(.75rem,2.5vw,1rem)] '>
+						<p className='text-white font-light text-sm leading-relaxed mobile:text-[clamp(.875rem,2.5vw,1rem)] '>
 							Bun venit la Woodly, locul unde arta se întalneste cu
 							functionalitatea intr-o simfonie de lux si stil. Suntem aici sa
 							facem realitate din visul tau, transformand fiecare spatiu într-un
@@ -26,14 +26,14 @@ export const Hero = () => {
 						</p>
 					</div>
 
-					<div className='flex justify-between gap-[clamp(.3rem,2vw,1rem)] mobile:gap-[clamp(.75rem,3vw,1rem)] mobileLarge:w-max '>
+					<div className='flex justify-between gap-[clamp(.2rem,2vw,1rem)] mobile:gap-[clamp(.75rem,3vw,1rem)] mobileLarge:w-max '>
 						<MainButton
 							href='/contact'
 							text='Contacteaza-ne'
 							className='bg-white max-[330px]:text-[0.65rem] mobileLarge:w-max'
 						/>
 						<MainButton
-							href='/'
+							href='/portofoliu'
 							text='Vezi Portofoliul'
 							className='text-white max-[335px]:text-[0.65rem] mobileLarge:w-max'
 						/>

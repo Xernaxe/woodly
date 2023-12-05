@@ -42,7 +42,7 @@ export const Footer = () => {
 					})}
 				</ul>
 
-				<div className=''>
+				<div className='flex flex-col gap-3'>
 					<div className='flex gap-3'>
 						<Image src={'/phone.svg'} alt='' width={24} height={24} />
 						<p className='font-outfit text-white'>+40 755 636 187</p>

@@ -16,13 +16,13 @@ export const Who = () => {
 				/>
 				<div className='hidden w-1/2 desktop:flex desktop:justify-end'>
 					<MainButton
-						href='/'
+						href='/portofoliu'
 						text={'Vezi portofoliu'}
 						className='bg-black text-white border-white flex justify-center'
 					/>
 				</div>
 			</div>
-			<div className=' text-xs leading-loose text-textGrey  desktop:text-base desktop:leading-relaxed desktop:flex desktop:gap-10 desktop:pt-4'>
+			<div className=' text-sm leading-loose text-textGrey  desktop:text-base desktop:leading-relaxed desktop:flex desktop:gap-10 desktop:pt-4'>
 				<p className='text-inherit desktop:w-7/12'>
 					La Woodly, ne dedicam misiunii de a transforma spatiul tau intr-un
 					mediu personalizat, adaptat stilului si nevoilor tale. Cu o vasta
@@ -38,7 +38,7 @@ export const Who = () => {
 
 			<div className='w-1/2 py-6 desktop:hidden'>
 				<MainButton
-					href='/'
+					href='/portofoliu'
 					text={'Vezi portofoliu'}
 					className='bg-black text-white border-white flex justify-center'
 				/>

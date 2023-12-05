@@ -30,3 +30,8 @@ export const useBurgerMenu = (): BurgerMenuContextType => {
 	}
 	return context;
 };
+
+export const toggleOverflow = () => {
+	document.querySelector('body')?.classList.toggle('overflowNone');
+	document.querySelector('html')?.classList.toggle('overflowNone');
+}

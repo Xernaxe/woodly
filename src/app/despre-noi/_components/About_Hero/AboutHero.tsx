@@ -30,7 +30,7 @@ export const AboutHero = () => {
 					className='text-white text-center desktop:text-4xl'
 					text='Suntem condusi de pasiunea de a crea design interior care face diferenta'
 				/>
-				<p className='text-white leading-relaxed font-light text-sm text-center'>
+				<p className='text-white leading-relaxed font-light text-sm text-center tablet:text-base'>
 					Misiunea noastră este să facem diferența prin design interior creativ
 					și autentic, construind locuințe și spații care vă definesc
 					autenticitatea. Suntem dedicați să vă ajutăm să vă atingeți

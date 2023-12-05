@@ -1,15 +1,14 @@
 'use client';
 import Image from 'next/image';
 import React from 'react';
-import { useBurgerMenu } from '@/app/_providers/BurgermenuContext';
+import { toggleOverflow, useBurgerMenu } from '@/app/_providers/BurgermenuContext';
 
 export const Burgermenu = () => {
 	const { isBurgerMenuOpen, setIsBurgerMenuOpen } = useBurgerMenu();
 
 	const toggleBurgerMenu = () => {
 		setIsBurgerMenuOpen(!isBurgerMenuOpen);
-		document.querySelector('body')?.classList.toggle('overflowNone');
-		document.querySelector('html')?.classList.toggle('overflowNone');
+		toggleOverflow();
 	};
 
 	return (

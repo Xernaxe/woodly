@@ -14,7 +14,7 @@ export const OurWork = () => {
 					className='text-white text-center px-8 desktop:pt-12'
 					text='Descoperiți Ultimele Noastre Lucrari'
 				/>
-				<p className='paddingsX text-white leading-relaxed font-light text-sm desktop:leading-loose desktop:w-9/12 desktop:px-0 desktopL:w-[52%]'>
+				<p className='paddingsX text-white leading-relaxed font-light text-sm tablet:text-base desktop:leading-loose desktop:w-9/12 desktop:px-0 desktopL:w-[52%]'>
 					Explorează portofoliul nostru și lasă-te inspirat de proiectele
 					noastre anterioare. Descoperă design-ul și execuția impecabilă care ne
 					definesc, pentru a înțelege cum putem transforma și amenaja spațiul
@@ -31,7 +31,7 @@ export const OurWork = () => {
 					className='bg-white max-[330px]:text-[0.7rem]'
 				/>
 				<MainButton
-					href='/'
+					href='/portofoliu'
 					text='Vezi Portofoliul'
 					className='text-white max-[330px]:text-[0.7rem]'
 				/>

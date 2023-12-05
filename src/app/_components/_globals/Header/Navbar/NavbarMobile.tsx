@@ -4,15 +4,23 @@ import Image from 'next/image';
 import Link from 'next/link';
 import INavLinks from '@/app/_types/INavLinks';
 import { Burgermenu } from './Burgermenu';
-import { useBurgerMenu } from '@/app/_providers/BurgermenuContext';
+import {
+	toggleOverflow,
+	useBurgerMenu,
+} from '@/app/_providers/BurgermenuContext';
 
 export const NavbarMobile = ({ navLinks }: { navLinks: INavLinks[] }) => {
-	const { isBurgerMenuOpen } = useBurgerMenu();
+	const { isBurgerMenuOpen, setIsBurgerMenuOpen } = useBurgerMenu();
 
 	return (
 		<nav className='flex items-center justify-between desktop:hidden'>
 			<a href='/' className='relative z-20 flex w-[8.3rem] h-[2.25rem]'>
-				<Image src={'/logo_1.svg'} alt='' fill={true} className='object-cover' />
+				<Image
+					src={'/logo_1.svg'}
+					alt=''
+					fill={true}
+					className='object-cover'
+				/>
 			</a>
 			<Burgermenu />
 
@@ -23,6 +31,10 @@ export const NavbarMobile = ({ navLinks }: { navLinks: INavLinks[] }) => {
 							<li
 								key={link.href}
 								className='flex justify-center relative overflow-hidden group'
+								onClick={() => {
+									setIsBurgerMenuOpen(!isBurgerMenuOpen);
+									toggleOverflow();
+								}}
 							>
 								<Link
 									href={link.href}

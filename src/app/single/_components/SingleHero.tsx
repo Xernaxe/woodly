@@ -35,7 +35,7 @@ export const SingleHero = () => {
 					className='text-white text-center desktop:text-4xl'
 					text='Great view apartment'
 				/>
-				<p className='text-white leading-relaxed font-light text-sm text-center'>
+				<p className='text-white leading-relaxed font-light text-sm text-center tablet:text-base'>
 					Apartamentul cu priveliște spectaculoasă. Un spațiu luminos și modern,
 					ideal pentru a vă bucura de panorame uimitoare și momente de relaxare.
 				</p>

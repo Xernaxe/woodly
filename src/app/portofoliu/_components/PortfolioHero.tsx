@@ -6,7 +6,7 @@ export const PortfolioHero = () => {
 		<section className='sectionP max-w-none pt-20 relative bg-black desktop:pt-40'>
 			<div className='desktop:m-auto desktop:w-8/12'>
 				<SectionHeader className='text-white text-center' text='Portofoliu' />
-				<p className='text-white leading-relaxed font-light text-sm text-center desktop:w-10/12 m-auto'>
+				<p className='text-white leading-relaxed font-light text-sm text-center desktop:text-base desktop:w-10/12 m-auto'>
 					Descoperă modul în care pasiunea noastră se traduce în fiecare detaliu
 					și cum aducem la viață idei inspirate pentru un design interior
 					captivant și distinctiv.

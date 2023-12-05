@@ -1,4 +1,4 @@
-import { SectionHeader } from '@/app/_components/_globals/SectionHeader/SectionHeader';
+import { SectionHeader } from '@/app/_components/_globals/SectionHeader';
 import React from 'react';
 
 export const ServicesHero = () => {

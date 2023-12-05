@@ -1,7 +1,7 @@
 import React from 'react';
-import { SectionHeader } from '../_globals/SectionHeader/SectionHeader';
+import { SectionHeader } from './_globals/SectionHeader';
 import Image from 'next/image';
-import { HomeSectionTag } from '../_globals/HomeSectionTag/HomeSectionTag';
+import { HomeSectionTag } from './_globals/HomeSectionTag';
 
 export const OurServices = () => {
 	const cards = [
@@ -37,7 +37,10 @@ export const OurServices = () => {
 			<div className='flex flex-wrap gap-8 desktop:gap-[20px] desktop:justify-center desktop:grid desktop:grid-cols-2 '>
 				{cards.map((card) => {
 					return (
-						<div className='relative h-[90vw] tablet:h-[60vw]  tablet:w-full desktop:aspect-square desktop:h-auto' key={card.title}>
+						<div
+							className='relative h-[90vw] tablet:h-[60vw]  tablet:w-full desktop:aspect-square desktop:h-auto'
+							key={card.title}
+						>
 							<div className='absolute top-0 left-0 w-full h-full max-w-[537px] desktop:aspect-square'>
 								<Image
 									src={card.imgSrc}
@@ -47,8 +50,10 @@ export const OurServices = () => {
 								/>
 							</div>
 							<div className='relative p-4 text-white z-20 h-full flex flex-col justify-end gap-2 desktop:py-9 desktop:px-10 desktopL:w-[95%]'>
-								<h4 className='text-inherit text-lg tablet:text-xl desktopL:text-2xl'>{card.title}</h4>
-								<p className='text-inherit text-xs font-light leading-loose desktop:text-sm desktop:leading-loose'>
+								<h4 className='text-inherit text-lg tablet:text-xl desktopL:text-2xl'>
+									{card.title}
+								</h4>
+								<p className='text-inherit text-sm font-light leading-loose'>
 									{card.description}
 								</p>
 							</div>

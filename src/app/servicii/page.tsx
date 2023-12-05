@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import { ServicesHero } from './_components/ServicesHero/ServicesHero';
-import { ServicesCards } from './_components/ServicesCards/ServicesCards';
+import { ServicesHero } from './_components/ServicesHero';
+import { ServicesCards } from './_components/ServicesCards';
 
 export default function Home() {
 	return (

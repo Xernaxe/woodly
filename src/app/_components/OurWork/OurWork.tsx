@@ -1,6 +1,6 @@
 import React from 'react';
-import { SectionHeader } from '../_globals/SectionHeader/SectionHeader';
-import { MainButton } from '../_globals/MainButton/MainButton';
+import { SectionHeader } from '../_globals/SectionHeader';
+import { MainButton } from '../_globals/MainButton';
 import { OurWorkSlider } from './OurWorkSlider/OurWorkSlider';
 
 export const OurWork = () => {

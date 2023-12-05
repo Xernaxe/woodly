@@ -1,7 +1,7 @@
 import React from 'react';
-import { SectionHeader } from '../_globals/SectionHeader/SectionHeader';
-import { MainButton } from '../_globals/MainButton/MainButton';
-import { HomeSectionTag } from '../_globals/HomeSectionTag/HomeSectionTag';
+import { SectionHeader } from '../_globals/SectionHeader';
+import { MainButton } from '../_globals/MainButton';
+import { HomeSectionTag } from '../_globals/HomeSectionTag';
 import { WhoSlider } from './WhoSlider/WhoSlider';
 
 export const Who = () => {
@@ -44,7 +44,7 @@ export const Who = () => {
 				/>
 			</div>
 
-			<WhoSlider/>
+			<WhoSlider />
 		</section>
 	);
 };

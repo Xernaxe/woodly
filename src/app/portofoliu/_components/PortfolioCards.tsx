@@ -104,7 +104,7 @@ export const PortfolioCards = () => {
 	};
 
 	return (
-		<section className='sectionM gap-12 desktop:gap-24'>
+		<section className='sectionM gap-20 desktop:gap-24'>
 			{cards.map((card, index) => renderCard(card, index + 1, cards.length))}
 		</section>
 	);

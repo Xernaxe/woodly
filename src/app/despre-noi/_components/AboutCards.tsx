@@ -108,7 +108,7 @@ export const AboutCards = () => {
 
 
 	return (
-		<section className='sectionM gap-12 desktop:gap-24'>
+		<section className='sectionM gap-20 desktop:gap-24'>
 			{cards.map((card) => renderCard(card))}
 		</section>
 	);

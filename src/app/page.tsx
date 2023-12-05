@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import { Hero } from './_components/Hero/Hero';
+import { Hero } from './_components/Hero';
 import { Who } from './_components/Who/Who';
-import { OurServices } from './_components/OurServices/OurServices';
+import { OurServices } from './_components/OurServices';
 import { OurWork } from './_components/OurWork/OurWork';
 
 export default function Home() {

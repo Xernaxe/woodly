@@ -1,8 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import { Header } from './_components/_globals/Header/Header';
-import { Footer } from './_components/_globals/Footer/Footer';
-
+import { Header } from './_components/_globals/Header';
+import { Footer } from './_components/_globals/Footer';
 
 export const metadata: Metadata = {
 	title: 'Woodly',
@@ -16,7 +15,6 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='ro'>
-
 			<body>
 				<Header />
 				<main>{children}</main>

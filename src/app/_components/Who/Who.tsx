@@ -6,7 +6,7 @@ import { WhoSlider } from './WhoSlider/WhoSlider';
 
 export const Who = () => {
 	return (
-		<section className='sectionM'>
+		<section className='sectionM desktopL:mb-0'>
 			<HomeSectionTag text='Cine Suntem' />
 			<div className='flex items-center'>
 				<SectionHeader

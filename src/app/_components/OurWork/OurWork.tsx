@@ -11,7 +11,7 @@ export const OurWork = () => {
 					Portofoliul nostru
 				</h3>
 				<SectionHeader
-					className='text-white text-center px-8 desktop:pt-12'
+					className='text-white text-center px-8 tablet:py-6 desktop:pt-12'
 					text='Descoperiți Ultimele Noastre Lucrari'
 				/>
 				<p className='paddingsX text-white leading-relaxed font-light text-sm tablet:text-base desktop:leading-loose desktop:w-9/12 desktop:px-0 desktopL:w-[52%]'>

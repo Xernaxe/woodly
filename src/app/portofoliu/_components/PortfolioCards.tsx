@@ -64,7 +64,7 @@ export const PortfolioCards = () => {
 			<Link
 				href={card.slug}
 				key={card.id}
-				className='flex flex-col-reverse gap-3 desktop:flex-row tablet:justify-between tablet:items-center desktop:gap-6'
+				className='flex flex-col-reverse gap-4 tablet:flex-row tablet:justify-between tablet:items-center desktop:gap-6'
 			>
 				<div className='flex flex-col gap-3 tablet:w-10/12 desktop:w-7/12 desktop:gap-6 desktopL:w-5/12'>
 					<div className='flex items-center gap-3'>
@@ -77,10 +77,10 @@ export const PortfolioCards = () => {
 						</p>
 					</div>
 					<div className='flex flex-col gap-2'>
-						<h3 className='text-black text-xl font-light desktop:text-4xl'>
+						<h3 className='text-black text-xl font-light tablet:text-2xl desktop:text-4xl'>
 							{card.title}
 						</h3>
-						<p className='text-black text-xs font-light leading-loose tablet:w-2/3 desktop:text-sm desktop:leading-loose desktop:w-auto'>
+						<p className='text-black text-sm font-light leading-loose tablet:leading-loose desktop:text-base desktop:leading-loose desktop:w-auto'>
 							{card.contents.desc}
 						</p>
 					</div>
@@ -104,7 +104,7 @@ export const PortfolioCards = () => {
 	};
 
 	return (
-		<section className='sectionM gap-12 desktop:gap-32'>
+		<section className='sectionM gap-12 desktop:gap-24'>
 			{cards.map((card, index) => renderCard(card, index + 1, cards.length))}
 		</section>
 	);

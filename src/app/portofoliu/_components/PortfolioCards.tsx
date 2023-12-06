@@ -96,7 +96,7 @@ export const PortfolioCards = () => {
 						src={'/aboutCard_1.png'}
 						alt={'@TODO'}
 						fill
-						className='object-cover'
+						objectFit='cover'
 					/>
 				</div>
 			</Link>

@@ -10,7 +10,7 @@ export const SingleImages = () => {
 						src={'/about_1.png'}
 						alt={'@TODO'}
 						fill
-						className='object-cover'
+						objectFit='cover'
 					/>
 				</div>
 				<div className='relative top-0 left-0 w-full max-w-[537px] desktop:max-w-none aspect-square'>
@@ -18,7 +18,7 @@ export const SingleImages = () => {
 						src={'/about_1.png'}
 						alt={'@TODO'}
 						fill
-						className='object-cover'
+						objectFit='cover'
 					/>
 				</div>
 				<div className='relative top-0 left-0 w-full max-w-[537px] desktop:max-w-none aspect-square'>
@@ -26,7 +26,7 @@ export const SingleImages = () => {
 						src={'/about_1.png'}
 						alt={'@TODO'}
 						fill
-						className='object-cover'
+						objectFit='cover'
 					/>
 				</div>
 				<div className='relative top-0 left-0 w-full max-w-[537px] desktop:max-w-none aspect-square'>
@@ -34,7 +34,7 @@ export const SingleImages = () => {
 						src={'/about_1.png'}
 						alt={'@TODO'}
 						fill
-						className='object-cover'
+						objectFit='cover'
 					/>
 				</div>
 			</div>

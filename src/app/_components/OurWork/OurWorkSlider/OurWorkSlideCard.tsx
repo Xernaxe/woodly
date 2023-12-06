@@ -11,7 +11,7 @@ export const OurWorkSlideCard = () => {
 						alt={'@TODO'}
 						fill
 						sizes='100vw'
-						className='object-cover'
+						objectFit='cover'
 					/>
 
 					<div className='hidden absolute top-0 left-0 w-full h-full bg-[linear-gradient(0deg,_rgba(0,0,0,0.30)_0%,_rgba(0,0,0,0.30)_100%),_linear-gradient(270deg,rgba(0,0,0,0.00)_51.25%,_#000_117.28%)] desktop:flex'></div>

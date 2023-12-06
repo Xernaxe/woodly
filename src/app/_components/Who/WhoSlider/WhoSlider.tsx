@@ -16,7 +16,8 @@ export const WhoSlider = () => {
 						alt={'@TODO'}
 						fill
 						sizes='100vw'
-						className='object-cover'
+						objectFit='cover'
+						priority
 					/>
 				</div>
 				<div className='embla__slide relative flex-[0_0_80%] max-w-[600px] max-h-[600px] min-w-0 aspect-square tablet:flex-[0_0_70%] desktop:flex-[0_0_50%] desktop:max-w-[537px]'>
@@ -25,7 +26,8 @@ export const WhoSlider = () => {
 						alt={'@TODO'}
 						fill
 						sizes='100vw'
-						className='object-cover'
+						objectFit='cover'
+						priority
 					/>
 				</div>
 				<div className='embla__slide relative flex-[0_0_80%] max-w-[600px] max-h-[600px] min-w-0 aspect-square tablet:flex-[0_0_70%] desktop:flex-[0_0_50%] desktop:max-w-[537px]'>
@@ -34,7 +36,7 @@ export const WhoSlider = () => {
 						alt={'@TODO'}
 						fill
 						sizes='100vw'
-						className='object-cover'
+						objectFit='cover'
 					/>
 				</div>
 			</div>

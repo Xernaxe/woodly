@@ -27,7 +27,7 @@ export const ContactHero = () => {
 							src={'/about_2.png'}
 							alt={'@TODO'}
 							fill
-							className='object-cover'
+							objectFit='cover'
 						/>
 					</div>
 				</div>

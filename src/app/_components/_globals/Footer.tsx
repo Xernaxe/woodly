@@ -20,7 +20,7 @@ export const Footer = () => {
 						src={'/logo_1.svg'}
 						alt=''
 						fill={true}
-						className='object-cover'
+						objectFit='cover'
 					/>
 				</a>
 

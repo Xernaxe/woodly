@@ -47,7 +47,7 @@ export const OurServices = () => {
 									alt={card.title}
 									fill
 									sizes='100vw'
-									className='object-cover'
+									objectFit='cover'
 								/>
 							</div>
 							<div className='relative p-4 text-white z-20 h-full flex flex-col justify-end gap-2 desktop:py-9 desktop:px-10 desktopL:w-[95%]'>

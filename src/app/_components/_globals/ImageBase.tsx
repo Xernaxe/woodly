@@ -13,9 +13,12 @@ export const ImageBase = ({
 }) => {
 	return (
 		<div
-			className={twMerge('relative top-0 left-0 w-full h-[90vw] tablet:h-[60vw]', className)}
+			className={twMerge(
+				'relative top-0 left-0 w-full h-[90vw] tablet:h-[60vw]',
+				className
+			)}
 		>
-			<Image src={src} alt={alt} fill className='object-cover' />
+			<Image src={src} alt={alt} fill objectFit='cover' />
 		</div>
 	);
 };

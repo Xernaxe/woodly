@@ -49,7 +49,7 @@ export const ServicesCards = () => {
 						src={card.imgSrc}
 						alt={card.alt}
 						fill
-						className='object-cover'
+						objectFit='cover'
 					/>
 				</div>
 			</div>

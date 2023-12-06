@@ -51,9 +51,9 @@ export const OurServices = () => {
 								/>
 							</div>
 							<div className='relative p-4 text-white z-20 h-full flex flex-col justify-end gap-2 desktop:py-9 desktop:px-10 desktopL:w-[95%]'>
-								<h4 className='text-inherit text-lg tablet:text-xl desktopL:text-2xl'>
+								<h2 className='text-inherit text-lg tablet:text-xl desktopL:text-2xl'>
 									{card.title}
-								</h4>
+								</h2>
 								<p className='text-inherit text-sm font-light leading-loose'>
 									{card.description}
 								</p>

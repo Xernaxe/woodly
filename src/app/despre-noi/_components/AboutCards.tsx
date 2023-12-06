@@ -69,9 +69,9 @@ export const AboutCards = () => {
 			<div className='flex items-start gap-3' key={subCategory.title}>
 				<Image src={'/check.svg'} alt='Check' width={24} height={24} />
 				<section className='flex flex-col gap-3'>
-					<h4 className=' text-lg font-semibold uppercase text-textGrey'>
+					<h2 className=' text-lg font-semibold uppercase text-textGrey'>
 						{subCategory.title}
-					</h4>
+					</h2>
 					<p className='text-textGrey leading-[1.75rem]'>
 						{subCategory.description}
 					</p>

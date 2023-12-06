@@ -1,4 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600&display=swap'); */
+
+@font-face {
+	font-family: "Inter";
+	src: url("/fonts/Inter.woff2") format("woff2");
+  }
+
+@font-face {
+	font-family: "Outfit";
+	src: url("/fonts/Outfit.woff2") format("woff2");
+  }
 
 @tailwind base;
 @tailwind components;

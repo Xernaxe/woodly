@@ -6,9 +6,9 @@ import React from 'react';
 export const NavbarDesktop = ({ navLinks }: { navLinks: INavLinks[] }) => {
 	return (
 		<nav className='hidden justify-between items-center desktop:flex'>
-			<a href='/' className='relative flex w-[8.3rem] h-[2.25rem]'>
+			<Link aria-label='Go back to the home page.' href='/' className='relative flex w-[8.3rem] h-[2.25rem]'>
 				<Image src={'/logo_1.svg'} alt='' fill={true} objectFit='cover' />
-			</a>
+			</Link>
 
 			<ul className='flex'>
 				{navLinks.map((link) => {

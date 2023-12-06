@@ -4,7 +4,6 @@ import { IPortfolioCard } from '@/app/_types/IPortfolioCard';
 import Link from 'next/link';
 
 export const PortfolioCards = () => {
-
 	const cards: IPortfolioCard[] = [
 		{
 			title: 'Great View Apartment',
@@ -62,6 +61,7 @@ export const PortfolioCards = () => {
 	) => {
 		return (
 			<Link
+				aria-label={`Acceseaza pagina ${card.slug}`}
 				href={card.slug}
 				key={card.id}
 				className='flex flex-col-reverse gap-4 tablet:flex-row tablet:justify-between tablet:items-center desktop:gap-6'

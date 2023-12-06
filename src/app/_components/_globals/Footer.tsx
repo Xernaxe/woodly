@@ -16,22 +16,15 @@ export const Footer = () => {
 		<footer className='border-t border-accentGrey p-8 bg-black px-[5%] py-10 desktopL:px-[12%] desktopL:py-[5rem]'>
 			<div className='flex flex-col items-center maxW m-auto gap-10 tablet:flex-row tablet:items-start tablet:justify-between'>
 				<a href='/' className='relative flex w-[8.3rem] h-[2.25rem]'>
-					<Image
-						src={'/logo_1.svg'}
-						alt=''
-						fill={true}
-						objectFit='cover'
-					/>
+					<Image src={'/logo_1.svg'} alt='' fill={true} objectFit='cover' />
 				</a>
 
 				<ul className='flex flex-col'>
 					{navLinks.map((link) => {
 						return (
-							<li
-								key={link.href}
-								className='text-center tablet:text-start'
-							>
+							<li key={link.href} className='text-center tablet:text-start'>
 								<Link
+									aria-label={`Acceseaza pagina ${link.name}`}
 									href={link.href}
 									className='font-outfit uppercase text-white leading-loose mx-4 group-hover:font-semibold'
 								>
@@ -44,7 +37,12 @@ export const Footer = () => {
 
 				<div className='flex flex-col gap-3'>
 					<div className='flex gap-3'>
-						<Image src={'/phone.svg'} alt='Our phone number:' width={24} height={24} />
+						<Image
+							src={'/phone.svg'}
+							alt='Our phone number:'
+							width={24}
+							height={24}
+						/>
 						<p className='font-outfit text-white'>+40 755 636 187</p>
 					</div>
 

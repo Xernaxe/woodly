@@ -31,7 +31,7 @@ export const NavbarMobile = ({ navLinks }: { navLinks: INavLinks[] }) => {
 									toggleOverflow();
 								}}
 							>
-								<Link
+								<Link aria-label={`Acceseaza pagina ${link.name}`}
 									href={link.href}
 									className='font-outfit uppercase text-white leading-loose mx-4 group-hover:font-semibold'
 								>

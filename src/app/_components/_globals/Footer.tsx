@@ -16,7 +16,7 @@ export const Footer = () => {
 		<footer className='border-t border-accentGrey p-8 bg-black px-[5%] py-10 desktopL:px-[12%] desktopL:py-[5rem]'>
 			<div className='flex flex-col items-center maxW m-auto gap-10 tablet:flex-row tablet:items-start tablet:justify-between'>
 				<Link aria-label='Go back to the home page.' href='/' className='relative flex w-[8.3rem] h-[2.25rem]'>
-					<Image src={'/logo_1.svg'} alt='Woodly logo' fill={true} objectFit='cover' />
+					<Image src={'/logo_1.svg'} alt='Woodly logo' fill={true} className=' object-cover' />
 				</Link>
 
 				<ul className='flex flex-col'>

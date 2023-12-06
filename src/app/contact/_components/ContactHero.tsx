@@ -26,8 +26,9 @@ export const ContactHero = () => {
 						<Image
 							src={'/about_2.png'}
 							alt={'@TODO'}
+							sizes='(max-width:1024px) 100vw, (min-width:1440px) 537px, 50vw'
 							fill
-							objectFit='cover'
+							className=' object-cover'
 						/>
 					</div>
 				</div>

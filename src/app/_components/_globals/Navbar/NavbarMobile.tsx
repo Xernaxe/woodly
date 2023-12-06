@@ -15,7 +15,7 @@ export const NavbarMobile = ({ navLinks }: { navLinks: INavLinks[] }) => {
 	return (
 		<nav className='flex items-center justify-between desktop:hidden'>
 			<Link aria-label='Go back to the home page.' href='/' className='relative z-20 flex w-[8.3rem] h-[2.25rem]'>
-				<Image src={'/logo_1.svg'} alt='' fill={true} objectFit='cover' />
+				<Image src={'/logo_1.svg'} alt='' fill={true} className=' object-cover' />
 			</Link>
 			<Burgermenu />
 

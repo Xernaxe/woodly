@@ -16,7 +16,7 @@ export const WhoSlider = () => {
 						alt={'@TODO'}
 						fill
 						sizes='100vw'
-						objectFit='cover'
+						className=' object-cover'
 						priority
 					/>
 				</div>
@@ -26,7 +26,7 @@ export const WhoSlider = () => {
 						alt={'@TODO'}
 						fill
 						sizes='100vw'
-						objectFit='cover'
+						className=' object-cover'
 						priority
 					/>
 				</div>
@@ -35,8 +35,8 @@ export const WhoSlider = () => {
 						src={'/WhoCarousel_1.png'}
 						alt={'@TODO'}
 						fill
-						sizes='100vw'
-						objectFit='cover'
+						sizes='(max-width:1024px) 100vw, (min-width:1440px) 537px, 50vw'
+						className=' object-cover'
 					/>
 				</div>
 			</div>

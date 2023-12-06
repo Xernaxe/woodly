@@ -46,8 +46,8 @@ export const OurServices = () => {
 									src={card.imgSrc}
 									alt={`Imagine pentru: ${card.title}`}
 									fill
-									sizes='100vw'
-									objectFit='cover'
+									sizes='(max-width:1024px) 100vw, (min-width:1440px) 537px, 50vw'
+									className=' object-cover'
 								/>
 							</div>
 							<div className='relative p-4 text-white z-20 h-full flex flex-col justify-end gap-2 desktop:py-9 desktop:px-10 desktopL:w-[95%]'>

@@ -24,10 +24,24 @@ export const AboutHero = () => {
 
 			<HeroImage>
 				<div className='relative  w-full aspect-square max-w-[537px]'>
-					<Image src={'/about_1.png'} alt={'@TODO: Change'} fill />
+					<Image
+						src={'/about_1.png'}
+						alt={'@TODO: Change'}
+						sizes='(max-width:1024px) 100vw, (min-width:1440px) 537px, 50vw'
+						priority
+						fill
+						className='object-cover'
+					/>
 				</div>
 				<div className='hidden relative  w-full h-full aspect-square max-w-[537px] desktop:block'>
-					<Image src={'/about_2.png'} alt={'@TODO: Change'} fill />
+					<Image
+						src={'/about_2.png'}
+						alt={'@TODO: Change'}
+						sizes='(max-width:1024px) 100vw, (min-width:1440px) 537px, 50vw'
+						priority
+						fill
+						className='object-cover'
+					/>
 				</div>
 			</HeroImage>
 		</section>

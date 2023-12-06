@@ -5,7 +5,11 @@ import { IServicesCard } from '@/app/_types/IServicesCard';
 export const ServicesCards = () => {
 	const renderDescriptions = (descriptions: string[]) => {
 		return descriptions.map((description) => {
-			return <p key={description} className='text-textGrey '>{description}</p>;
+			return (
+				<p key={description} className='text-textGrey '>
+					{description}
+				</p>
+			);
 		});
 	};
 
@@ -48,8 +52,9 @@ export const ServicesCards = () => {
 					<Image
 						src={card.imgSrc}
 						alt={card.alt}
+						sizes='(max-width:1024px) 100vw, (min-width:1440px) 537px, 50vw'
 						fill
-						objectFit='cover'
+						className=' object-cover'
 					/>
 				</div>
 			</div>

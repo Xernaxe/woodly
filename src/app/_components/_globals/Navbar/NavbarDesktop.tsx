@@ -7,7 +7,7 @@ export const NavbarDesktop = ({ navLinks }: { navLinks: INavLinks[] }) => {
 	return (
 		<nav className='hidden justify-between items-center desktop:flex'>
 			<Link aria-label='Go back to the home page.' href='/' className='relative flex w-[8.3rem] h-[2.25rem]'>
-				<Image src={'/logo_1.svg'} alt='' fill={true} objectFit='cover' />
+				<Image src={'/logo_1.svg'} alt='' fill={true} className=' object-cover' />
 			</Link>
 
 			<ul className='flex'>

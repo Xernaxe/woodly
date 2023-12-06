@@ -18,7 +18,7 @@ export const ImageBase = ({
 				className
 			)}
 		>
-			<Image src={src} alt={alt} fill objectFit='cover' />
+			<Image src={src} alt={alt} fill className=' object-cover' />
 		</div>
 	);
 };

@@ -42,7 +42,7 @@ export const Hero = () => {
 
 				<div className='absolute top-0 left-0 w-full h-full max-h-[1200px] -z-10 aspect-video'>
 					<Image
-						objectFit='cover'
+						className=' object-cover'
 						src={'/heroImg.png'}
 						fill
 						sizes='100vw'

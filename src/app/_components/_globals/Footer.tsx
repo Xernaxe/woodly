@@ -44,12 +44,12 @@ export const Footer = () => {
 
 				<div className='flex flex-col gap-3'>
 					<div className='flex gap-3'>
-						<Image src={'/phone.svg'} alt='' width={24} height={24} />
+						<Image src={'/phone.svg'} alt='Our phone number:' width={24} height={24} />
 						<p className='font-outfit text-white'>+40 755 636 187</p>
 					</div>
 
 					<div className='flex gap-3'>
-						<Image src={'/email.svg'} alt='' width={24} height={24} />
+						<Image src={'/email.svg'} alt='Our email:' width={24} height={24} />
 						<p className='font-outfit text-white'>woodly.rooms@gmail.com</p>
 					</div>
 				</div>

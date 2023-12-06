@@ -10,10 +10,11 @@ export const OurWorkSlideCard = () => {
 						src={'/WhoCarousel_1.png'}
 						alt={'@TODO'}
 						fill
+						sizes='100vw'
 						className='object-cover'
 					/>
 
-                    <div className="hidden absolute top-0 left-0 w-full h-full bg-[linear-gradient(0deg,_rgba(0,0,0,0.30)_0%,_rgba(0,0,0,0.30)_100%),_linear-gradient(270deg,rgba(0,0,0,0.00)_51.25%,_#000_117.28%)] desktop:flex"></div>
+					<div className='hidden absolute top-0 left-0 w-full h-full bg-[linear-gradient(0deg,_rgba(0,0,0,0.30)_0%,_rgba(0,0,0,0.30)_100%),_linear-gradient(270deg,rgba(0,0,0,0.00)_51.25%,_#000_117.28%)] desktop:flex'></div>
 				</div>
 				<div className=' flex flex-col gap-2 p-2 desktop:absolute desktop:top-1/2  desktop:w-1/2 desktop:left-[10%] desktop:max-w-[500px] desktop:z-10 desktop:h-fit desktopL:w-[50%]  desktopL:relative desktop:-translate-y-1/2 desktopL:-left-[450px] desktop:gap-6'>
 					<div className='flex items-center gap-3 '>
@@ -26,7 +27,9 @@ export const OurWorkSlideCard = () => {
 						</p>
 					</div>
 					<div className='flex flex-col gap-2'>
-						<h3 className='text-white text-xl font-light desktop:text-4xl'>Great View Apartment</h3>
+						<h3 className='text-white text-xl font-light desktop:text-4xl'>
+							Great View Apartment
+						</h3>
 						<p className='hidden text-white text-xs font-light leading-loose tablet:block desktop:text-sm desktop:leading-loose'>
 							Apartamentul cu priveliște spectaculoasă. Un spațiu luminos și
 							modern, ideal pentru a vă bucura de panorame uimitoare și momente

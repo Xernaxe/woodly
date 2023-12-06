@@ -15,6 +15,7 @@ export const WhoSlider = () => {
 						src={'/WhoCarousel_1.png'}
 						alt={'@TODO'}
 						fill
+						sizes='100vw'
 						className='object-cover'
 					/>
 				</div>
@@ -23,6 +24,7 @@ export const WhoSlider = () => {
 						src={'/WhoCarousel_1.png'}
 						alt={'@TODO'}
 						fill
+						sizes='100vw'
 						className='object-cover'
 					/>
 				</div>
@@ -31,6 +33,7 @@ export const WhoSlider = () => {
 						src={'/WhoCarousel_1.png'}
 						alt={'@TODO'}
 						fill
+						sizes='100vw'
 						className='object-cover'
 					/>
 				</div>

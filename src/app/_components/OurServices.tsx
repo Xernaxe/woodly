@@ -46,6 +46,7 @@ export const OurServices = () => {
 									src={card.imgSrc}
 									alt={card.title}
 									fill
+									sizes='100vw'
 									className='object-cover'
 								/>
 							</div>

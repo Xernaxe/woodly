@@ -44,7 +44,7 @@ export const OurServices = () => {
 							<div className='absolute top-0 left-0 w-full h-full max-w-[537px] desktop:aspect-square'>
 								<Image
 									src={card.imgSrc}
-									alt={card.title}
+									alt={`Imagine pentru: ${card.title}`}
 									fill
 									sizes='100vw'
 									objectFit='cover'

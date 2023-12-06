@@ -40,7 +40,7 @@ export const Hero = () => {
 					</div>
 				</div>
 
-				<div className='absolute top-0 left-0 w-full h-full max-h-[1200px] -z-10'>
+				<div className='absolute top-0 left-0 w-full h-full max-h-[1200px] -z-10 aspect-video'>
 					<Image
 						objectFit='cover'
 						src={'/heroImg.png'}

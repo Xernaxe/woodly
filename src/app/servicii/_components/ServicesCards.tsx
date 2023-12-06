@@ -37,7 +37,7 @@ export const ServicesCards = () => {
 		);
 	};
 
-	const renderCard = (card: IServicesCard) => {
+	const renderCard = (card: IServicesCard, index: number) => {
 		return (
 			<div
 				key={card.id}
@@ -54,6 +54,7 @@ export const ServicesCards = () => {
 						alt={card.alt}
 						sizes='(max-width:1024px) 100vw, (min-width:1440px) 537px, 50vw'
 						fill
+						priority={index === 0 ? true : false}
 						className=' object-cover'
 					/>
 				</div>
@@ -121,7 +122,7 @@ export const ServicesCards = () => {
 
 	return (
 		<section className='sectionM gap-20 desktop:gap-24'>
-			{cards.map((card) => renderCard(card))}
+			{cards.map((card, index) => renderCard(card, index))}
 		</section>
 	);
 };

@@ -96,6 +96,7 @@ export const PortfolioCards = () => {
 						src={'/aboutCard_1.png'}
 						alt={'@TODO'}
 						fill
+						priority={index === 0 ? true : false}
 						sizes='(max-width:1024px) 100vw, (min-width:1440px) 537px, 50vw'
 						className=' object-cover'
 					/>

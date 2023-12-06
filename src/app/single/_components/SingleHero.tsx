@@ -32,6 +32,7 @@ export const SingleHero = () => {
 						src={'/about_1.png'}
 						alt={'@TODO: Change'}
 						fill
+						priority
 						className=' object-cover'
 					/>
 				</div>

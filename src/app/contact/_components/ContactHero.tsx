@@ -14,11 +14,11 @@ export const ContactHero = () => {
 				<div className='flex flex-col gap-5 items-center desktop:w-1/2'>
 					<div className='flex flex-col gap-2 tablet:flex-row tablet:w-full tablet:justify-between desktopL:max-w-[480px]'>
 						<div className=''>
-							<h3 className='text-[#B3B3B3] font-light text-center desktop:text-start'>Email</h3>
+							<h2 className='text-[#B3B3B3] font-light text-center desktop:text-start'>Email</h2>
 							<p className='text-white font-light text-2xl text-center tablet:text-xl'>woodly.rooms@gmail.com</p>
 						</div>
 						<div className=''>
-							<h3 className='text-[#B3B3B3] font-light text-center desktop:text-start'>Numar de contact</h3>
+							<h2 className='text-[#B3B3B3] font-light text-center desktop:text-start'>Numar de contact</h2>
 							<p className='text-white font-light text-2xl text-center tablet:text-xl'>+40 755 638 187</p>
 						</div>
 					</div>
@@ -27,6 +27,7 @@ export const ContactHero = () => {
 							src={'/about_2.png'}
 							alt={'@TODO'}
 							sizes='(max-width:1024px) 100vw, (min-width:1440px) 537px, 50vw'
+							priority
 							fill
 							className=' object-cover'
 						/>

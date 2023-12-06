@@ -69,7 +69,7 @@ export const PortfolioCards = () => {
 				<div className='flex flex-col gap-3 tablet:w-10/12 desktop:w-7/12 desktop:gap-6 desktopL:w-5/12'>
 					<div className='flex items-center gap-3'>
 						<p className=' text-xs font-light uppercase letter-spacing text-black desktop:text-sm'>
-							0{index}
+							0{index + 1}
 						</p>
 						<span className=' h-[1px] w-10/12 bg-accentGreen'></span>
 						<p className=' text-xs font-light uppercase letter-spacing text-black desktop:text-sm'>
@@ -107,7 +107,7 @@ export const PortfolioCards = () => {
 
 	return (
 		<section className='sectionM gap-20 desktop:gap-24'>
-			{cards.map((card, index) => renderCard(card, index + 1, cards.length))}
+			{cards.map((card, index) => renderCard(card, index, cards.length))}
 		</section>
 	);
 };

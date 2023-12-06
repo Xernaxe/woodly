@@ -28,8 +28,8 @@ const config: Config = {
 				"desktopL": "1440px"
 			},
 			fontFamily: {
-				"inter": ["Inter", ...defaultTheme.fontFamily.sans],
-				"outfit": ["Outfit", "Inter", ...defaultTheme.fontFamily.sans]
+				"inter": ["Inter", "system-ui"],
+				"outfit": ["Outfit", "system-ui"]
 			},
 		},
 	},

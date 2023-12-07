@@ -1,7 +1,7 @@
-import { SectionHeader } from '@/app/_components/_globals/SectionHeader';
+import { SectionHeader } from '@/app/(main)/_components/_globals/SectionHeader';
 import React from 'react';
 import Image from 'next/image';
-import { HeroImage } from '@/app/_components/_globals/HeroImage';
+import { HeroImage } from '@/app/(main)/_components/_globals/HeroImage';
 
 export const SingleHero = () => {
 	return (

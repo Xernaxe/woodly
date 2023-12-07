@@ -1,6 +1,7 @@
 import React from 'react';
 import { IFAQ } from '@/app/_types/IFAQ';
 import { FAQCard } from './FAQCard';
+import Link from 'next/link';
 
 export const FAQWrapper = () => {
 	const structuredDataToAdd = {
@@ -85,9 +86,9 @@ export const FAQWrapper = () => {
 					<p className='text-textGrey  text-center'>
 						Aveți întrebări? Noi avem răspunsuri. Dacă nu găsiți ceea ce
 						căutați, nu ezitați să{' '}
-						<span className='text-accentGreen underline cursor-pointer'>
+						<Link href='#hero' className='text-accentGreen underline cursor-pointer'>
 							ne contactați
-						</span>
+						</Link>
 						.
 					</p>
 				</div>

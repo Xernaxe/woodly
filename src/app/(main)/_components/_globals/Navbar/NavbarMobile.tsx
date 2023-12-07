@@ -29,7 +29,7 @@ export const NavbarMobile = ({ navLinks }: { navLinks: INavLinks[] }) => {
 			<Burgermenu />
 
 			{isBurgerMenuOpen && (
-				<ul className='flex flex-col justify-center fixed z-10 w-screen h-screen top-0 left-0 bg-black'>
+				<ul className='flex flex-col gap-2 justify-center fixed z-10 w-screen h-screen top-0 left-0 bg-black'>
 					{navLinks.map((link) => {
 						return (
 							<li
@@ -43,7 +43,7 @@ export const NavbarMobile = ({ navLinks }: { navLinks: INavLinks[] }) => {
 								<Link
 									aria-label={`Acceseaza pagina ${link.name}`}
 									href={link.href}
-									className='font-outfit uppercase text-white leading-loose mx-4 group-hover:font-semibold'
+									className='font-outfit text-lg uppercase text-white leading-loose mx-4 group-hover:font-semibold'
 								>
 									{link.name}
 								</Link>

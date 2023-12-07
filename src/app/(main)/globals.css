@@ -1,18 +1,16 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600&text=abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZăĂâÂșȘțȚîÎ-&display=swap'); */
 
 @font-face {
-	font-family: "Inter";
-	src: url("/fonts/Inter-300.woff2") format("woff2");
+	font-family: 'Inter';
+	src: url('/fonts/Inter-300.woff2') format('woff2');
 	font-display: swap;
 }
 
 @font-face {
-	font-family: "Outfit";
-	src: url("/fonts/Outfit-300.woff2") format("woff2");
+	font-family: 'Outfit';
+	src: url('/fonts/Outfit-300.woff2') format('woff2');
 	font-display: swap;
-  }
-
-  
+}
 
 @tailwind base;
 @tailwind components;
@@ -36,24 +34,24 @@ body {
 
 @layer components {
 	.paddingsY {
-		@apply py-[4rem]
+		@apply py-[4rem];
 	}
 	.paddingsX {
 		@apply px-6 tablet:px-[8%] desktopL:px-[12%];
 	}
 	.sectionPaddings {
-		@apply paddingsY paddingsX
+		@apply paddingsY paddingsX;
 	}
 	.maxW {
-		@apply max-w-[1093px]
+		@apply max-w-[1093px];
 	}
-	
+
 	.marginsX {
-		@apply mx-6 tablet:mx-[8%] desktopL:mx-[12%]
+		@apply mx-6 tablet:mx-[8%] desktopL:mx-[12%];
 	}
 
 	.marginsY {
-		@apply my-[4rem]
+		@apply my-[4rem];
 	}
 
 	.sectionM {

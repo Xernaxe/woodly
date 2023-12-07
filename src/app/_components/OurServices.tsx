@@ -14,13 +14,13 @@ export const OurServices = () => {
 		{
 			title: 'Proiectare',
 			description:
-				'Designerii nostri sunt pregatiti sa ofere solutii inteligente pentru a crea un spatiu armonios si ergonomic in casa dumneavoastra.',
+				'Designerii noștri sunt pregătiți să ofere soluții inteligente pentru a crea un spațiu armonios și ergonomic în casa dumneavoastră.',
 			imgSrc: '/OurServices_2.png',
 		},
 		{
 			title: 'Masuratori',
 			description:
-				'Acordam o mare atentie masuratorilor la fata locului pentru ca mobilierul trebuie sa se potriveasca la milimetru.',
+				'Acordăm o mare atenție măsurătorilor la fața locului, deoarece mobilierul trebuie să se potrivească la milimetru.',
 			imgSrc: '/OurServices_3.png',
 		},
 		{

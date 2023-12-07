@@ -39,12 +39,12 @@ export const AboutCards = () => {
 				descriptions: [],
 				subCategory: [
 					{
-						title: 'GARANTIA SERVICIULUI:',
+						title: 'GARANȚIA SERVICIULUI:',
 						description:
 							'La Woodly, oferim servicii cuprinzătoare și profesionale. Fiecare clientprimește cea mai mare atenție și grijă. Vom fi partenerul dumneavoastră de încredere pe întreg parcursul proiectului de transformare a apartamentului, permițându-vă să vă concentrați asupra a ceea ce contează cu adevărat.',
 					},
 					{
-						title: 'GARANTIA CALITATII:',
+						title: 'GARANȚIA CALITĂȚII:',
 						description:
 							'Toate produsele noastre sunt fabricate în Germania și vin cu o garanție de 5 ani. Procesul nostru de producție automatizat, controlul calității de la furnizorii furnizorilor și cele 50 de puncte de verificare din timpul procesului de producție sunt toate dovezi ale calității în care credem.',
 					},

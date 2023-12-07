@@ -12,13 +12,13 @@ export const AboutHero = () => {
 				</h3>
 				<SectionHeader
 					className='text-white text-center desktop:text-4xl'
-					text='Suntem condusi de pasiunea de a crea design interior care face diferenta'
+					text='Suntem conduși de pasiunea de a crea design interior care face diferența.'
 				/>
 				<p className='text-white leading-relaxed font-light text-sm text-center tablet:text-base'>
 					Misiunea noastră este să facem diferența prin design interior creativ
 					și autentic, construind locuințe și spații care vă definesc
 					autenticitatea. Suntem dedicați să vă ajutăm să vă atingeți
-					potențialul și să vă bucurați de un mediu care inspiră.
+					potențialul și să vă bucurați de un mediu care vă inspiră.
 				</p>
 			</div>
 

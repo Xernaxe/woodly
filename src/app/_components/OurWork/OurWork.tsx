@@ -27,7 +27,7 @@ export const OurWork = () => {
 			<div className='paddingsX flex justify-between w-full gap-[clamp(.3rem,2vw,1rem)] mobile:gap-[clamp(.75rem,3vw,1rem)] tablet:justify-center desktop:pt-3'>
 				<MainButton
 					href='/contact'
-					text='Contacteaza-ne'
+					text='Contactează-ne'
 					className='bg-white max-[330px]:text-[0.7rem]'
 				/>
 				<MainButton

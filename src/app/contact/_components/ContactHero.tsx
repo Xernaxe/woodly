@@ -7,7 +7,7 @@ export const ContactHero = () => {
 		<section className='sectionP max-w-none flex flex-col pt-20 relative bg-black desktop:pt-40 desktopL:items-center'>
 			<div className='flex flex-col gap-10 maxW w-full desktop:flex-row desktop:justify-between'>
 				<div className='flex flex-col gap-5 desktop:w-[37%] desktop:justify-between'>
-					<h1 className='text-white text-3xl font-light desktopL:text-5xl'>Contacteaza-ne</h1>
+					<h1 className='text-white text-3xl font-light desktopL:text-5xl'>Contactează-ne</h1>
 					<ContactForm />
 				</div>
 

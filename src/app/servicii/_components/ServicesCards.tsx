@@ -3,6 +3,66 @@ import Image from 'next/image';
 import { IServicesCard } from '@/app/_types/IServicesCard';
 
 export const ServicesCards = () => {
+
+	const cards: IServicesCard[] = [
+		{
+			title: 'Consultanță',
+			contents: {
+				desc: [
+					'Echipa noastră oferă consultanță în alegerea designului în funcție de nevoile și gusturile dumneavoastră. Deoarece casa este unul dintre cele mai dragi locuri, trebuie să stabilim împreună aspectele care țin de funcționalitatea și aspectul acesteia. Realizarea unui proiect adecvat necesită în primul rând un consultant cu experiență și cu bune abilități de comunicare. Pentru reușita proiectului, este de asemenea necesară determinarea compromisului ideal dintre:',
+				],
+				checks: [
+					'Nevoile estetice',
+					'Cerințele de depozitare',
+					'Constrângerile tehnice.',
+					'Reguli de ergonomie',
+					'Forma spațiului',
+					'Buget',
+				],
+			},
+			alt: '@TODO',
+			imgSrc: '/servicesCard_1.png',
+			id: 1,
+		},
+		{
+			title: 'Proiectare',
+			contents: {
+				desc: [
+					'Designerii noștri sunt pregătiți să ofere soluții inteligente pentru a crea un spațiu armonios și ergonomic în casa dumneavoastră. Schița se face asistată de calculator, în timp real. Veți vedea în 3D mobilierul dumneavoastră înainte de a-l comanda. Tot ce aveți de făcut este să aduceți o schiță a spațiului în care să fie figurate dimensiunile încăperii, poziționarea ușilor, ferestrelor și a racordurilor la utilități. Pentru ca cerințele să fie reflectate în configuratia finală a mobilierului, colaborarea cu dumneavoastră în faza de proiectare este foarte importantă.',
+				],
+				checks: [],
+			},
+			alt: '@TODO',
+			imgSrc: '/servicesCard_2.png',
+			id: 2,
+		},
+		{
+			title: 'Măsuratori',
+			contents: {
+				desc: [
+					'Acordăm o mare atenție măsurătorilor la fața locului pentru ca mobilierul să se potrivească la milimetru. Pentru aceasta folosim instrumente de înaltă precizie care ne ajută să croim mobilierul perfect pentru spațiul dumneavoastră.',
+				],
+				checks: [],
+			},
+			alt: '@TODO',
+			imgSrc: '/servicesCard_3.png',
+			id: 3,
+		},
+		{
+			title: 'Instalare',
+			contents: {
+				desc: [
+					'Echipa noastră de montaj lucrează la cel mai înalt nivel de profesionalism și nu îi va dezamăgi nici pe cei mai pretențioși dintre dumneavoastră. Mobila vine din Germania gata asamblată, iar montatorii noștri vor așeza corpurile pe poziție. Acest mod de lucru asigură o calitate și o precizie imposibil de egalat în condițiile în care majoritatea comercianților propun livrarea mobilierului pe piese și asamblarea acestuia direct la domiciliul clientului. Considerăm de asemenea esențială buna colaborare dintre proiectant și echipa de montaj. Această colaborare este sudată pe parcursul a multor proiecte realizate împreună.',
+				],
+				checks: [],
+			},
+			alt: '@TODO',
+			imgSrc: '/servicesCard_4.png',
+			id: 4,
+		},
+	];
+
+
 	const renderDescriptions = (descriptions: string[]) => {
 		return descriptions.map((description) => {
 			return (
@@ -62,63 +122,6 @@ export const ServicesCards = () => {
 		);
 	};
 
-	const cards: IServicesCard[] = [
-		{
-			title: 'Consultanta',
-			contents: {
-				desc: [
-					'Echipa noastra ofera consultanta in alegerea designului in functie de nevoile si gusturile dumneavoastra. Pentru ca casa este unul dintre cele mai dragi locuri, trebuie sa stabilim impreuna aspectele care tin de functionalitatea si aspectul acesteia. Realizarea unui proiect adecvat necesita in primul rand un consultant cu experienta si cu bune abilitati de comunicare. Pentru reusita proiectului este de asemenea necesara determinarea compromisului ideal dintre:',
-				],
-				checks: [
-					'Nevoile estetice',
-					'Cerintele de depozitare',
-					'Constrangerile tehnice',
-					'Reguli de ergonomie',
-					'Forma spatiului',
-					'Buget',
-				],
-			},
-			alt: '@TODO',
-			imgSrc: '/servicesCard_1.png',
-			id: 1,
-		},
-		{
-			title: 'Proiectare',
-			contents: {
-				desc: [
-					'Designerii nostri sunt pregatit sa ofere solutii inteligente pentru a crea un spatiu armonios si ergonomic in casa dumneavoastra. Schita se face asistata de calculator, in timp real. Veti vedea in 3D mobilierul dumneavoastra inainte de a-l comanda. Tot ce aveti de facut este sa aduceti o schita a spatiului in care sa fie figurate dimensiunile incaperii, pozitionarea usilor, ferestrelor si a racordurilor la utilitati. Pentru ca cerintele sa fie reflectate in configuratia finala a mobilierului, colaborarea cu dumneavoastra in faza de proiectare este foarte importanta.',
-				],
-				checks: [],
-			},
-			alt: '@TODO',
-			imgSrc: '/servicesCard_2.png',
-			id: 2,
-		},
-		{
-			title: 'Masuratori',
-			contents: {
-				desc: [
-					'Acordam o mare atentie masuratorilor la fata locului pentru ca mobilierul sa se potriveasca la milimetru. Pentru aceasta folosim intrumente de inalta precizie care ne ajuta sa croim mobilierul perfect pentru spatiul dumneavostra.',
-				],
-				checks: [],
-			},
-			alt: '@TODO',
-			imgSrc: '/servicesCard_3.png',
-			id: 3,
-		},
-		{
-			title: 'Instalare',
-			contents: {
-				desc: [
-					'Echipa noastra de montaj lucreaza la cel mai inalt nivel de profesionalism si nu ii va dezamagi nici pe cei mai pretentiosi dintre dumneavostra. Mobila vine din Germania gata asamblata iar montatorii nostri vor aseza corpurile pe pozitie. Acest mod de lucru asigura o calitate si o precizie imposibil de egalat in conditiile in care majoritatea comerciantilor propun livrarea mobilierului pe piese si asamblarea acestuia direct la domiciliul clientului. Consideram de asemenea esentiala buna colaborare dintre proiectant si echipa de montaj. Aceasta colaborare este sudata pe parcursul a multor proiecte realizate impreuna.',
-				],
-				checks: [],
-			},
-			alt: '@TODO',
-			imgSrc: '/servicesCard_4.png',
-			id: 4,
-		},
-	];
 
 	return (
 		<section className='sectionM gap-20 desktop:gap-24'>

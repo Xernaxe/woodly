@@ -17,29 +17,29 @@ export const Who = () => {
 				<div className='hidden w-1/2 desktop:flex desktop:justify-end'>
 					<MainButton
 						href='/portofoliu'
-						text={'Vezi portofoliu'}
+						text={'Vezi portofoliul'}
 						className='bg-black text-white border-white flex justify-center'
 					/>
 				</div>
 			</div>
 			<div className=' text-sm leading-loose text-textGrey  desktop:text-base desktop:leading-relaxed desktop:flex desktop:gap-10 desktop:pt-4'>
 				<p className='text-inherit desktop:w-7/12'>
-					La Woodly, ne dedicam misiunii de a transforma spatiul tau intr-un
-					mediu personalizat, adaptat stilului si nevoilor tale. Cu o vasta
-					experienta in proiectare si executie, am castigat respectul clientilor
-					nostri prin transparenta si încredere.
+					La Woodly, ne dedicăm misiunii de a transforma spațiul tău într-un
+					mediu personalizat, adaptat stilului și nevoilor tale. Cu o vastă
+					experiență în proiectare și execuție, am câștigat respectul clienților
+					noștri prin transparență și încredere.
 				</p>
 				<p className='text-inherit desktop:w-6/12'>
-					Cu o echipa de specialisti în amenajari, punem la dispozitie cele mai
-					calitative materiale si tehnologii pentru a asigura ca fiecare proiect
-					devine o capodopera.
+					Cu o echipă de specialiști în amenajări, punem la dispoziție cele mai
+					calitative materiale și tehnologii pentru a asigura că fiecare proiect
+					devine o capodoperă.
 				</p>
 			</div>
 
 			<div className='w-1/2 py-6 desktop:hidden'>
 				<MainButton
 					href='/portofoliu'
-					text={'Vezi portofoliu'}
+					text={'Vezi portofoliul'}
 					className='bg-black text-white border-white flex justify-center'
 				/>
 			</div>

@@ -46,7 +46,7 @@ export const ContactForm = () => {
 						type='text'
 						name='Name'
 						required
-						placeholder='Name'
+						placeholder='Număr de telefon'
 					/>
 				</div>
 			</fieldset>
@@ -61,7 +61,7 @@ export const ContactForm = () => {
 						className='px-2 mt-4 text-white resize-none py-4 h-28 border-solid border-t-0 border-x-0 border bg-transparent focus:outline-dashed focus:outline-gray-700'
 						name='Message'
 						required
-						placeholder='Write your message'
+						placeholder='Scrie mesajul tău.'
 					/>
 				</div>
 			</fieldset>

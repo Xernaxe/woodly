@@ -2,10 +2,10 @@ import React from 'react';
 
 export const Stats = () => {
 	const statsCards = [
-		{ title: 'Clienti multumiti', stat: '100+' },
-		{ title: 'Ani de experienta', stat: '15+' },
+		{ title: 'Clienți mulțumiți', stat: '100+' },
+		{ title: 'Ani de experiență', stat: '15+' },
 		{ title: 'Rezultat dorit', stat: '100%' },
-		{ title: 'Rata de satisfactie', stat: '99%' },
+		{ title: 'Rata de satisfacție', stat: '99%' },
 	];
 	return (
 		<section className='sectionM items-center gap-6 tablet:flex-row tablet:justify-evenly desktop:mt-32'>

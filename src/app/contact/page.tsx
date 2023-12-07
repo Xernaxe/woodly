@@ -5,7 +5,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
 	title: 'Contact',
 	description:
-		'Contacteaza-ne pentru a putea impreuna despre noul tau proiect.',
+		'Contactează-ne pentru a putea discuta despre noul tău proiect.',
 };
 
 

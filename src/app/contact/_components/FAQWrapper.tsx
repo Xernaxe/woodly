@@ -32,7 +32,7 @@ export const FAQWrapper = () => {
 		<section className='sectionM gap-4'>
 			<div className='desktop:m-auto desktop:w-[80%]'>
 				<div className='flex flex-col gap-6 max-w-[26rem] m-auto mb-12'>
-					<h2 className='text-4xl font-light text-center'>Intrebari Frecvente</h2>
+					<h2 className='text-4xl font-light text-center'>Întrebări Frecvente</h2>
 					<p className='text-textGrey  text-center'>
 						Aveți întrebări? Noi avem răspunsuri. Dacă nu găsiți ceea ce
 						căutați, nu ezitați să <span className='text-accentGreen underline cursor-pointer'>ne contactați</span>.

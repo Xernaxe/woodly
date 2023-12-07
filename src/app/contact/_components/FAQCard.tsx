@@ -59,7 +59,7 @@ export const FAQCard = ({
 					itemProp='acceptedAnswer'
 					itemType='https://schema.org/Answer'
 				>
-					<p>{card.desc}</p>
+					<p itemProp='text'>{card.desc}</p>
 				</div>
 			</section>
 			{showDivider && (

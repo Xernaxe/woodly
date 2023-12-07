@@ -12,22 +12,15 @@ export const FAQCard = ({
 	card: IFAQ;
 	index: number;
 	arrLength: number;
-	key: React.Key;
+	key: React.Key
 }) => {
 	const [isOpen, setIsOpen] = useState(false);
 	const showDivider = index + 1 !== arrLength;
 
 	return (
 		<>
-			<section
-				itemScope
-				itemProp='mainEntity'
-				itemType='https://schema.org/Question'
-				key={card.title}
-				className='relative flex flex-col gap-2 py-6'
-			>
+			<section key={card.title} className='relative flex flex-col gap-2 py-6'>
 				<h2
-					itemProp='name'
 					onClick={() => setIsOpen(!isOpen)}
 					className='flex cursor-pointer justify-between text-xl font-medium'
 				>
@@ -51,16 +44,13 @@ export const FAQCard = ({
 					</span>
 				</h2>
 
-				<div
+				<p
 					className={`overflow-hidden transition-all ${
 						isOpen ? 'max-h-[500px]' : 'max-h-0'
 					}`}
-					itemScope
-					itemProp='acceptedAnswer'
-					itemType='https://schema.org/Answer'
 				>
-					<p itemProp='text'>{card.desc}</p>
-				</div>
+					{card.desc}
+				</p>
 			</section>
 			{showDivider && (
 				<div className='content-[""] bottom-0 relative flex w-full h-[1px] bg-[#DADADA] translate-y-full'></div>

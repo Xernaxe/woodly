@@ -46,6 +46,7 @@ export const OurServices = () => {
 									src={card.imgSrc}
 									alt={`Imagine pentru: ${card.title}`}
 									fill
+									loading='lazy'
 									sizes='(max-width:1024px) 100vw, (min-width:1440px) 537px, 50vw'
 									className=' object-cover'
 								/>

@@ -28,10 +28,22 @@ export const OurWorkSlider = () => {
 				</div>
 				<div className='hidden absolute bottom-[20%] w-full left-[10%] desktopL:left-[50%]  desktopL:-translate-x-1/2 desktopL:w-1/2 maxW desktop:flex gap-12 h-5'>
 					<button className='embla__prev ' onClick={scrollPrev}>
-						<Image src={'/arrow_left.svg'} alt='Următoarea imagine' width={20} height={20} />
+						<Image
+							src={'/arrow_left.svg'}
+							loading='lazy'
+							alt='Următoarea imagine'
+							width={20}
+							height={20}
+						/>
 					</button>
 					<button className='embla__next ' onClick={scrollNext}>
-						<Image src={'/arrow_right.svg'} alt='Imaginea anterioară' width={20} height={20} />
+						<Image
+							src={'/arrow_right.svg'}
+							loading='lazy'
+							alt='Imaginea anterioară'
+							width={20}
+							height={20}
+						/>
 					</button>
 				</div>
 			</div>

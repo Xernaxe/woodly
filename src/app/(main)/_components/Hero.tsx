@@ -45,9 +45,9 @@ export const Hero = () => {
 						className=' object-cover'
 						src={'/heroImg.png'}
 						fill
-						sizes='100vw'
+						sizes="100"
 						alt='Hero Image'
-						priority={true}
+						priority
 					/>
 				</div>
 			</div>

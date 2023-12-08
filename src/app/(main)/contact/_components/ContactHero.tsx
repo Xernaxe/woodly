@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { ContactForm } from './ContactForm';
+import Link from 'next/link';
 
 export const ContactHero = () => {
 	return (
@@ -13,14 +14,14 @@ export const ContactHero = () => {
 
 				<div className='flex flex-col gap-5 items-center desktop:w-1/2'>
 					<div className='flex flex-col gap-2 tablet:flex-row tablet:w-full tablet:justify-between desktopL:max-w-[480px]'>
-						<div className=''>
+						<Link href={'mailto:woodly.rooms@gmail.com'} className=''>
 							<h2 className='text-[#B3B3B3] font-light text-center desktop:text-start'>Email</h2>
 							<p className='text-white font-light text-2xl text-center tablet:text-xl'>woodly.rooms@gmail.com</p>
-						</div>
-						<div className=''>
+						</Link>
+						<Link href={'tel:0040755638187'} className=''>
 							<h2 className='text-[#B3B3B3] font-light text-center desktop:text-start'>Numar de contact</h2>
-							<p className='text-white font-light text-2xl text-center tablet:text-xl'>+40 755 638 187</p>
-						</div>
+							<p className='text-white font-outfit text-2xl text-center tablet:text-xl'>+40 755 638 187</p>
+						</Link>
 					</div>
 					<div className='relative top-0 left-0 w-full max-w-[480px] aspect-square '>
 						<Image

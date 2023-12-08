@@ -6,8 +6,13 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
 	title: 'Despre Noi',
-	description:
-		'Woodly este o companie de design interior de prim plan specializată în transformarea completă a apartamentului dumneavoastră.'
+	description: 'Woodly este o companie de design interior de prim plan specializată în transformarea completă a apartamentului dumneavoastră.',
+	openGraph: {
+		url: new URL('https://woodly.vercel.app/despre-noi'),
+		title: 'Despre Noi | Woodly',
+		description: 'Woodly este o companie de design interior de prim plan specializată în transformarea completă a apartamentului dumneavoastră.',
+	}
+	
 };
 
 export default function Home() {

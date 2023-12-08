@@ -45,7 +45,7 @@ export const Footer = () => {
 				</ul>
 
 				<div className='flex flex-col gap-3'>
-					<div className='flex gap-3'>
+					<Link href={'tel:0040755636187'} className='flex gap-3'>
 						<Image
 							src={'/phone.svg'}
 							alt='Our phone number:'
@@ -53,12 +53,12 @@ export const Footer = () => {
 							height={24}
 						/>
 						<p className='font-outfit text-white'>+40 755 636 187</p>
-					</div>
+					</Link>
 
-					<div className='flex gap-3'>
+					<Link href={'mailto:woodly.rooms@gmail.com'} className='flex gap-3'>
 						<Image src={'/email.svg'} alt='Our email:' width={24} height={24} />
 						<p className='font-outfit text-white'>woodly.rooms@gmail.com</p>
-					</div>
+					</Link>
 				</div>
 			</div>
 		</footer>

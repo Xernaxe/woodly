@@ -4,7 +4,12 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
 	title: 'Contact',
-	description: 'Contactează-ne pentru a putea discuta despre noul tău proiect.'
+	description: 'Contactează-ne pentru a putea discuta despre noul tău proiect.',
+	openGraph: {
+		url: new URL('https://woodly.vercel.app/contact'),
+		title: 'Contact | Woodly',
+		description: 'Contactează-ne pentru a putea discuta despre noul tău proiect.',
+	}
 };
 
 export default function Home() {

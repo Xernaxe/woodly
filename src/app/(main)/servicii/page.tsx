@@ -4,8 +4,12 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
 	title: 'Servicii',
-	description:
-		'Serviciile pe care Woodly ti le poate oferi.',
+	description: 'Serviciile pe care Woodly ți le poate oferi.',
+	openGraph: {
+		url: new URL('https://woodly.vercel.app/servicii'),
+		title: 'Servicii | Woodly',
+		description: 'Serviciile pe care Woodly ți le poate oferi.',
+	}
 };
 
 export default function Home() {

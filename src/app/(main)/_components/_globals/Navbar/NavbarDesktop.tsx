@@ -39,10 +39,10 @@ export const NavbarDesktop = ({ navLinks }: { navLinks: INavLinks[] }) => {
 				})}
 			</ul>
 
-			<div className='flex gap-3'>
+			<Link href={'tel:0040755636187'} className='flex gap-3'>
 				<Image src={'/phone.svg'} alt='Phone number' width={24} height={24} />
 				<p className='font-outfit text-white'>+40 755 636 187</p>
-			</div>
+			</Link>
 		</nav>
 	);
 };

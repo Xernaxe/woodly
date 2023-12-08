@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		type: 'website',
 		url: new URL('https://woodly.vercel.app'),
-		title: 'Woodly',
+		title: 'Acasă | Woodly',
 		description: 'Amenajam locuri in care fiecare detaliu te inspira.',
 		siteName: 'Woodly',
 		locale: 'ro-RO',

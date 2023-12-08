@@ -9,12 +9,6 @@ export const metadata: Metadata = {
 		template: '%s | Woodly',
 	},
 	metadataBase: new URL('https://woodly.vercel.app'),
-	alternates: {
-		canonical: '/',
-		languages: {
-			'ro-RO': '/'
-		}
-	},
 	description: 'Amenajam locuri in care fiecare detaliu te inspira.',
 	openGraph: {
 		type: 'website',

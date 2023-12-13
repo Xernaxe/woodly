@@ -24,9 +24,10 @@ Created a website for an Interior Designer company's needs, focusing on simplici
 
 ## Test suite
 
-Google PageSpeed Insights
+
+<a href="https://pagespeed.web.dev/analysis/https-woodly-vercel-app/frfeife53b?form_factor=mobile">Google PageSpeed Insights</a>
 ![Insights for mobile](./Insights_Mobile.webp)
 ![Insights for desktop](./Insights_Desktop.webp)
 
-Yellow Lab Tools
+<a href="https://yellowlab.tools/result/graz7faqxg">Yellow Lab Tools</a>
 ![Yellow Lab Tools](./YellowLabTools.png)

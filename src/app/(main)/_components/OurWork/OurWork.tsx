@@ -2,8 +2,12 @@ import React from 'react';
 import { SectionHeader } from '../_globals/SectionHeader';
 import { MainButton } from '../_globals/MainButton';
 import { OurWorkSlider } from './OurWorkSlider/OurWorkSlider';
+import { getAllProjects } from '../../../../../sanity/sanity-utils';
+import { IPortfolioCard } from '../../_types/IPortfolioCard';
 
-export const OurWork = () => {
+export async function OurWork() {
+	const portfolioCards: IPortfolioCard[] = await getAllProjects();
+	// console.log(portfolioCards[0]);
 	return (
 		<section className='paddingsY flex flex-col items-center bg-black '>
 			<div className='flex flex-col items-center'>
@@ -22,7 +26,7 @@ export const OurWork = () => {
 				</p>
 			</div>
 
-			<OurWorkSlider />
+			<OurWorkSlider portfolioCards={portfolioCards} />
 
 			<div className='paddingsX flex justify-between w-full gap-[clamp(.3rem,2vw,1rem)] mobile:gap-[clamp(.75rem,3vw,1rem)] tablet:justify-center desktop:pt-3'>
 				<MainButton
@@ -38,4 +42,4 @@ export const OurWork = () => {
 			</div>
 		</section>
 	);
-};
+}

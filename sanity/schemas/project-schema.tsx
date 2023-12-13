@@ -1,42 +1,93 @@
-const tags = [
-	{ title: 'New', value: 'new' },
-	{ title: 'Popular', value: 'popular' },
-	{ title: 'Trending', value: 'trending' },
-];
+import { Rule } from 'sanity';
 
-const project = {
-	name: 'project',
-	title: 'Projects',
+const imageObj = {
+	title: 'imageObj',
 	type: 'document',
 	fields: [
 		{
+			title: 'Image Source',
+			name: 'imgSrc',
+			type: 'string',
+			validation: (Rule: Rule) => Rule.required(),
+		},
+		{
+			title: 'Image Alt Text',
+			name: 'imgAlt',
+			type: 'string',
+			validation: (Rule: Rule) => Rule.required(),
+		},
+	],
+};
+
+const project = {
+	title: 'Proiecte portofoliu',
+	name: 'portfolioCard',
+	type: 'document',
+	fields: [
+		{
+			title: 'Title',
 			name: 'title',
 			type: 'string',
-			title: 'Title',
+			validation: (Rule: Rule) => Rule.required(),
 		},
 		{
-			title: 'Tag',
-			type: 'string',
-			name: 'tag',
-			options: {
-				list: tags.map(({ title, value }) => ({ title, value })),
-				layout: 'radio',
-			},
+			title: 'Description',
+			name: 'desc',
+			type: 'text',
+			validation: (Rule: Rule) => Rule.required(),
 		},
 		{
-			name: 'overview',
-			type: 'string',
-			title: 'News overview',
-		},
-		{
-			name: 'image',
+			title: 'Main Image',
+			name: 'mainImg',
 			type: 'image',
-			title: 'Image',
+			fields: [{ name: 'alt', type: 'string' }],
+		},
+
+		{
+			title: 'Images',
+			name: 'images',
+			type: 'array',
+			of: [
+				{
+					type: 'image',
+					fields: [
+						{
+							name: 'alt',
+							type: 'string',
+						},
+					],
+				},
+			],
+			validation: (Rule: Rule) => Rule.required(),
 		},
 		{
-			name: 'slug',
+			title: 'Reception Date',
+			name: 'receptionDate',
+			type: 'date',
+			validation: (Rule: Rule) => Rule.required(),
+		},
+		{
+			title: 'Location',
+			name: 'location',
+			type: 'string',
+			validation: (Rule: Rule) => Rule.required(),
+		},
+		{
+			title: 'Style',
+			name: 'style',
+			type: 'string',
+			validation: (Rule: Rule) => Rule.required(),
+		},
+		{
+			title: 'Surface',
+			name: 'surface',
+			type: 'number',
+			validation: (Rule: Rule) => Rule.required(),
+		},
+		{
+			name: 'postSlug',
 			type: 'slug',
-			title: 'slug',
+			title: 'postSlug',
 			options: {
 				source: 'title',
 				maxLength: 40
@@ -44,4 +95,5 @@ const project = {
 		},
 	],
 };
+
 export default project;

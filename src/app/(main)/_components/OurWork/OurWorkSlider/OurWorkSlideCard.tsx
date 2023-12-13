@@ -1,13 +1,23 @@
 import React from 'react';
 import Image from 'next/image';
+import { IPortfolioCard } from '@/app/(main)/_types/IPortfolioCard';
+import Link from 'next/link';
 
-export const OurWorkSlideCard = () => {
+export const OurWorkSlideCard = ({
+	card,
+	arrLength,
+	index,
+}: {
+	card: IPortfolioCard;
+	arrLength: number;
+	index: number;
+}) => {
 	return (
 		<div className='embla__slide flex flex-col relative flex-[0_0_80%] min-w-0 max-h-[537px] aspect-square mx-2  tablet:flex-[0_0_70%] desktop:flex-[0_0_100%] desktop:aspect-video desktop:flex-row-reverse'>
-			<div className='flex flex-col w-full h-full gap-2 desktop:flex-row-reverse desktop:mx-[8%] desktopL:mx-auto maxW'>
+			<Link href={`/portofoliu/${card.slug.current}`} className='flex flex-col w-full h-full gap-2 desktop:flex-row-reverse desktop:mx-[8%] desktopL:mx-auto maxW'>
 				<div className='relative w-full h-full max-w-[537px] max-h-[537px] tablet:h-4/6 desktop:absolute desktop:w-[60%] desktop:h-full'>
 					<Image
-						src={'/WhoCarousel_1.png'}
+						src={card.mainImg.imgSrc}
 						alt={'@TODO'}
 						fill
 						loading='lazy'
@@ -20,21 +30,19 @@ export const OurWorkSlideCard = () => {
 				<div className=' flex flex-col gap-2 p-2 desktop:absolute desktop:top-1/2  desktop:w-1/2 desktop:left-[10%] desktop:max-w-[500px] desktop:z-10 desktop:h-fit desktopL:w-[50%]  desktopL:relative desktop:-translate-y-1/2 desktopL:-left-[450px] desktop:gap-6'>
 					<div className='flex items-center gap-3 '>
 						<p className=' text-xs font-light uppercase letter-spacing text-white desktop:text-sm'>
-							01
+							{index + 1 < 10 ? `0${index + 1}` : index + 1}
 						</p>
 						<span className=' h-[1px] w-2/12 bg-accentGreen desktop:w-16'></span>
 						<p className=' text-xs font-light uppercase letter-spacing text-white desktop:text-sm'>
-							04
+							{arrLength < 10 ? `0${arrLength}` : arrLength}
 						</p>
 					</div>
 					<div className='flex flex-col gap-2'>
 						<h3 className='text-white text-xl font-light desktop:text-4xl'>
-							Great View Apartment
+							{card.title}
 						</h3>
 						<p className='hidden text-white text-xs font-light leading-loose tablet:block desktop:text-sm desktop:leading-loose'>
-							Apartamentul cu priveliște spectaculoasă. Un spațiu luminos și
-							modern, ideal pentru a vă bucura de panorame uimitoare și momente
-							de relaxare.
+							{card.desc}
 						</p>
 					</div>
 					<div className='flex items-center gap-2 desktop:gap-4'>
@@ -44,7 +52,7 @@ export const OurWorkSlideCard = () => {
 						</p>
 					</div>
 				</div>
-			</div>
+			</Link>
 		</div>
 	);
 };

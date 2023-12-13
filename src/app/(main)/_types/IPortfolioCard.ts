@@ -1,18 +1,20 @@
-type IDetailsPortfolio = {
-    date: string;
-    location: string;
-    style: string;
-    surface: number;
+type IImg = {
+    imgAlt: string;
+	imgSrc: string;
 }
 
 export type IPortfolioCard = {
     title: string;
-	contents: {
-		desc: string;
-		details: IDetailsPortfolio
-	};
-	alt: string;
-	imgSrc: string;
-	id: number;
-    slug: string
+	desc: string;
+	location: string;
+	style: string;
+	receptionDate: string;
+	surface: number;
+	mainImg: IImg
+	images: IImg[]
+	_id: number;
+    slug: {
+		current: string;
+		_type: string;
+	}
 };

@@ -3,57 +3,8 @@ import Image from 'next/image';
 import { IPortfolioCard } from '@/app/(main)/_types/IPortfolioCard';
 import Link from 'next/link';
 
-export const PortfolioCards = () => {
-	const cards: IPortfolioCard[] = [
-		{
-			title: 'Great View Apartment',
-			contents: {
-				desc: 'Apartamentul cu priveliște spectaculoasă. Un spațiu luminos și modern, ideal pentru a vă bucura de panorame uimitoare și momente de relaxare.',
-				details: {
-					date: 'Dec 2022',
-					location: 'Bucuresti',
-					style: 'Modern',
-					surface: 164,
-				},
-			},
-			alt: '@TODO',
-			imgSrc: '/aboutCard_1.png',
-			id: 1,
-			slug: '@TODO',
-		},
-		{
-			title: 'Great View Apartment',
-			contents: {
-				desc: 'Apartamentul cu priveliște spectaculoasă. Un spațiu luminos și modern, ideal pentru a vă bucura de panorame uimitoare și momente de relaxare.',
-				details: {
-					date: 'Dec 2022',
-					location: 'Bucuresti',
-					style: 'Modern',
-					surface: 164,
-				},
-			},
-			alt: '@TODO',
-			imgSrc: '/aboutCard_1.png',
-			id: 2,
-			slug: '@TODO',
-		},
-		{
-			title: 'Great View Apartment',
-			contents: {
-				desc: 'Apartamentul cu priveliște spectaculoasă. Un spațiu luminos și modern, ideal pentru a vă bucura de panorame uimitoare și momente de relaxare.',
-				details: {
-					date: 'Dec 2022',
-					location: 'Bucuresti',
-					style: 'Modern',
-					surface: 164,
-				},
-			},
-			alt: '@TODO',
-			imgSrc: '/aboutCard_1.png',
-			id: 3,
-			slug: '@TODO',
-		},
-	];
+export const PortfolioCards = ({portfolioCards}: {portfolioCards: IPortfolioCard[]}) => {
+
 	const renderCard = (
 		card: IPortfolioCard,
 		index: number,
@@ -61,9 +12,9 @@ export const PortfolioCards = () => {
 	) => {
 		return (
 			<Link
-				aria-label={`Acceseaza pagina ${card.slug}`}
-				href={card.slug}
-				key={card.id}
+				aria-label={`Acceseaza pagina ${card.slug.current}`}
+				href={`/portofoliu/${card.slug.current}`}
+				key={card._id}
 				className='flex flex-col-reverse gap-4 tablet:flex-row tablet:justify-between tablet:items-center desktop:gap-6'
 			>
 				<div className='flex flex-col gap-3 tablet:w-10/12 desktop:w-7/12 desktop:gap-6 desktopL:w-5/12'>
@@ -81,7 +32,7 @@ export const PortfolioCards = () => {
 							{card.title}
 						</h3>
 						<p className='text-black text-sm font-light leading-loose tablet:leading-loose desktop:text-base desktop:leading-loose desktop:w-auto'>
-							{card.contents.desc}
+							{card.desc}
 						</p>
 					</div>
 					<div className='flex items-center gap-2 desktop:gap-4'>
@@ -93,8 +44,8 @@ export const PortfolioCards = () => {
 				</div>
 				<div className='relative top-0 left-0 w-full max-w-[537px] aspect-square desktop:w-1/2'>
 					<Image
-						src={'/aboutCard_1.png'}
-						alt={'@TODO'}
+						src={card.mainImg.imgSrc}
+						alt={card.mainImg.imgAlt}
 						fill
 						priority={index === 0 ? true : false}
 						sizes='(max-width:1024px) 100vw, (min-width:1440px) 537px, 50vw'
@@ -107,7 +58,7 @@ export const PortfolioCards = () => {
 
 	return (
 		<section className='sectionM gap-20 desktop:gap-24'>
-			{cards.map((card, index) => renderCard(card, index, cards.length))}
+			{portfolioCards.map((card, index) => renderCard(card, index, portfolioCards.length))}
 		</section>
 	);
 };

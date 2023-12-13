@@ -3,8 +3,12 @@ import { SectionHeader } from '../_globals/SectionHeader';
 import { MainButton } from '../_globals/MainButton';
 import { HomeSectionTag } from '../_globals/HomeSectionTag';
 import { WhoSlider } from './WhoSlider/WhoSlider';
+import { getAllProjectsImages } from '../../../../../sanity/sanity-utils';
 
-export const Who = () => {
+export async function Who() {
+
+	const projectsImages = await getAllProjectsImages();
+	console.log(projectsImages)
 	return (
 		<section className='sectionM desktopL:mb-0'>
 			<HomeSectionTag text='Cine Suntem' />
@@ -44,7 +48,7 @@ export const Who = () => {
 				/>
 			</div>
 
-			<WhoSlider />
+			<WhoSlider projectsImages={projectsImages} />
 		</section>
 	);
 };

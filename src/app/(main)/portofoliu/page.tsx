@@ -1,3 +1,4 @@
+import { getAllProjects } from '../../../../sanity/sanity-utils';
 import { PortfolioCards } from './_components/PortfolioCards';
 import { PortfolioHero } from './_components/PortfolioHero';
 import { Metadata } from 'next';
@@ -12,13 +13,14 @@ export const metadata: Metadata = {
 	}
 };
 
-export default function Home() {
+export default async function Home() {
+	const portfolioCards = await getAllProjects();
 	return (
 		<>
 			<PortfolioHero />
 
 			<div className='desktopL:flex flex-col items-center'>
-				<PortfolioCards />
+				<PortfolioCards portfolioCards={portfolioCards} />
 			</div>
 		</>
 	);

@@ -37,7 +37,7 @@ export async function getAllProjects(): Promise<IPortfolioCard[]> {
 }
 
 export async function getAllProjectsImages(): Promise<
-	Pick<IPortfolioCard, '_id' | 'slug' | 'title' | 'mainImg'>
+	Pick<IPortfolioCard, '_id' | 'slug' | 'title' | 'mainImg'>[]
 > {
 	return client.fetch(
 		groq`*[_type=="portfolioCard"]  {

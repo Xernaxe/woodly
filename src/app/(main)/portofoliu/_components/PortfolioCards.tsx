@@ -3,8 +3,11 @@ import Image from 'next/image';
 import { IPortfolioCard } from '@/app/(main)/_types/IPortfolioCard';
 import Link from 'next/link';
 
-export const PortfolioCards = ({portfolioCards}: {portfolioCards: IPortfolioCard[]}) => {
-
+export const PortfolioCards = ({
+	portfolioCards,
+}: {
+	portfolioCards: IPortfolioCard[];
+}) => {
 	const renderCard = (
 		card: IPortfolioCard,
 		index: number,
@@ -20,11 +23,11 @@ export const PortfolioCards = ({portfolioCards}: {portfolioCards: IPortfolioCard
 				<div className='flex flex-col gap-3 tablet:w-10/12 desktop:w-7/12 desktop:gap-6 desktopL:w-5/12'>
 					<div className='flex items-center gap-3'>
 						<p className=' text-xs font-light uppercase letter-spacing text-black desktop:text-sm'>
-							0{index + 1}
+							{index + 1 < 10 ? `0${index + 1}` : index + 1}
 						</p>
 						<span className=' h-[1px] w-10/12 bg-accentGreen'></span>
 						<p className=' text-xs font-light uppercase letter-spacing text-black desktop:text-sm'>
-							0{arrLength}
+							{arrLength < 10 ? `0${arrLength}` : arrLength}
 						</p>
 					</div>
 					<div className='flex flex-col gap-2'>
@@ -58,7 +61,9 @@ export const PortfolioCards = ({portfolioCards}: {portfolioCards: IPortfolioCard
 
 	return (
 		<section className='sectionM gap-20 desktop:gap-24'>
-			{portfolioCards.map((card, index) => renderCard(card, index, portfolioCards.length))}
+			{portfolioCards.map((card, index) =>
+				renderCard(card, index, portfolioCards.length)
+			)}
 		</section>
 	);
 };

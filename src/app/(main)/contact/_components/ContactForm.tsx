@@ -20,7 +20,7 @@ export const ContactForm = () => {
 			</fieldset>
 
 			<fieldset className=''>
-				<legend className='absolute -left-96'>Type in your email.</legend>
+				<legend className='absolute -left-96'>Introdu email-ul.</legend>
 				<div className='flex flex-col'>
 					<label className='absolute -left-96' htmlFor='Email'>
 						Email <span aria-label='required'>*</span>
@@ -36,15 +36,15 @@ export const ContactForm = () => {
 			</fieldset>
 
 			<fieldset className=''>
-				<legend className='absolute -left-96'>Type in your name.</legend>
+				<legend className='absolute -left-96'>Introdu numarul de telefon.</legend>
 				<div className='flex flex-col'>
-					<label className='absolute -left-96' htmlFor='Name'>
-						Name <span aria-label='required'>*</span>
+					<label className='absolute -left-96' htmlFor='phoneNumber'>
+						Numar de telefon <span aria-label='required'>*</span>
 					</label>
 					<input
 						className='px-2 h-12 text-white border-solid border bg-transparent border-t-0 border-x-0 placeholder:uppercase placeholder:text-sm focus:outline-dashed focus:outline-gray-700'
 						type='text'
-						name='Name'
+						name='phoneNumber'
 						required
 						placeholder='Număr de telefon'
 					/>
@@ -52,10 +52,10 @@ export const ContactForm = () => {
 			</fieldset>
 
 			<fieldset className=''>
-				<legend className='absolute -left-96 '>Your message to us.</legend>
+				<legend className='absolute -left-96 '>Mesajul tau pentru noi.</legend>
 				<div className='flex flex-col'>
 					<label className='absolute -left-96' htmlFor='Message'>
-						Message <span aria-label='required'>*</span>
+						Mesajul tau pentru noi. <span aria-label='required'>*</span>
 					</label>
 					<textarea
 						className='px-2 mt-4 text-white resize-none py-4 h-28 border-solid border-t-0 border-x-0 border bg-transparent focus:outline-dashed focus:outline-gray-700'

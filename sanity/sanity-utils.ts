@@ -32,7 +32,7 @@ export async function getAllProjects(): Promise<IPortfolioCard[]> {
             location,
             style,
             surface,
-            slug,
+            "slug": postSlug.current,
             "images": images[] {
                 'imgAlt': alt,
                 'imgSrc': asset->url
@@ -73,7 +73,7 @@ export async function getPortfolioCardBySlug(
             location,
             style,
             surface,
-            slug,
+            "slug": postSlug.current,
             "images": images[] {
                 'imgAlt': alt,
                 'imgSrc': asset->url

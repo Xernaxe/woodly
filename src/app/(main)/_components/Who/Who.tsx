@@ -8,7 +8,7 @@ import { getAllProjectsImages } from '../../../../../sanity/sanity-utils';
 export async function Who() {
 
 	const projectsImages = await getAllProjectsImages();
-	console.log(projectsImages)
+	// console.log(projectsImages)
 	return (
 		<section className='sectionM desktopL:mb-0'>
 			<HomeSectionTag text='Cine Suntem' />

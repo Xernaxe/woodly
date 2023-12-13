@@ -20,14 +20,15 @@ export const NavbarDesktop = ({ navLinks }: { navLinks: INavLinks[] }) => {
 			</Link>
 
 			<ul className='flex'>
-				{navLinks.map((link) => {
+				{navLinks.map((link, index) => {
 					return (
 						<li
 							key={link.href}
 							className='flex justify-center relative overflow-hidden group'
-						>
+							>
 							<Link
 								aria-label={`Acceseaza pagina ${link.name}`}
+								tabIndex={index + 1}
 								href={link.href}
 								className='font-outfit uppercase text-white leading-loose mx-4 group-hover:font-semibold'
 							>

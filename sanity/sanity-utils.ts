@@ -26,7 +26,7 @@ export async function getAllProjects(): Promise<IPortfolioCard[]> {
             desc,
             "mainImg": {
                 'imgSrc': mainImg.asset->url,
-                'alt': mainImg.alt
+                'imgAlt': mainImg.alt
             },
             receptionDate,
             location,
@@ -47,9 +47,10 @@ export async function getAllProjectsImages() {
 		groq`*[_type=="portfolioCard"]  {
             _id,
             "slug": postSlug.current,
+            title,
             "mainImg": {
                 'imgSrc': mainImg.asset->url,
-                'alt': mainImg.alt
+                'imgAlt': mainImg.alt
             }
         }
 	`

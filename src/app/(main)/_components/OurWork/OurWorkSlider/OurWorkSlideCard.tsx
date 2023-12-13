@@ -12,14 +12,13 @@ export const OurWorkSlideCard = ({
 	arrLength: number;
 	index: number;
 }) => {
-	// console.log(card.slug)
 	return (
 		<div className='embla__slide flex flex-col relative flex-[0_0_80%] min-w-0 max-h-[537px] aspect-square mx-2  tablet:flex-[0_0_70%] desktop:flex-[0_0_100%] desktop:aspect-video desktop:flex-row-reverse'>
-			<Link href={`/portofoliu/${card.slug}`} className='flex flex-col w-full h-full gap-2 desktop:flex-row-reverse desktop:mx-[8%] desktopL:mx-auto maxW'>
+			<Link href={`/portofoliu/${card.slug}`} aria-label={`Accesează pagina ${card.title}`} className='flex flex-col w-full h-full gap-2 desktop:flex-row-reverse desktop:mx-[8%] desktopL:mx-auto maxW'>
 				<div className='relative w-full h-full max-w-[537px] max-h-[537px] tablet:h-4/6 desktop:absolute desktop:w-[60%] desktop:h-full'>
 					<Image
 						src={card.mainImg.imgSrc}
-						alt={'@TODO'}
+						alt={card.mainImg.imgAlt}
 						fill
 						loading='lazy'
 						sizes='(max-width:1024px) 100vw, (min-width:1440px) 537px, 50vw'

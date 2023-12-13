@@ -1,16 +1,10 @@
-import { createClient, groq } from 'next-sanity';
-
-import { apiVersion, dataset, projectId, useCdn } from './env';
+import { groq } from 'next-sanity';
 import { IFAQ } from '@/app/(main)/_types/IFAQ';
 import { IPortfolioCard } from '@/app/(main)/_types/IPortfolioCard';
+import { client } from './lib/client';
 
 export async function getAllFAQs(): Promise<IFAQ[]> {
-	return createClient({
-		apiVersion,
-		dataset,
-		projectId,
-		useCdn,
-	}).fetch(groq`*[_type=="FAQ"] {
+	return client.fetch(groq`*[_type=="FAQ"] {
             _id,
             question,
             answer
@@ -19,7 +13,7 @@ export async function getAllFAQs(): Promise<IFAQ[]> {
 }
 
 export async function getAllProjects(): Promise<IPortfolioCard[]> {
-	return createClient({ apiVersion, dataset, projectId, useCdn }).fetch(
+	return client.fetch(
 		groq`*[_type=="portfolioCard"] {
             _id,
             title,
@@ -42,8 +36,10 @@ export async function getAllProjects(): Promise<IPortfolioCard[]> {
 	);
 }
 
-export async function getAllProjectsImages() {
-	return createClient({ apiVersion, dataset, projectId, useCdn }).fetch(
+export async function getAllProjectsImages(): Promise<
+	Pick<IPortfolioCard, '_id' | 'slug' | 'title' | 'mainImg'>
+> {
+	return client.fetch(
 		groq`*[_type=="portfolioCard"]  {
             _id,
             "slug": postSlug.current,
@@ -61,7 +57,7 @@ export async function getPortfolioCardBySlug(
 	slug: string
 ): Promise<IPortfolioCard> {
 	console.log(slug);
-	return createClient({ apiVersion, dataset, projectId, useCdn }).fetch(
+	return client.fetch(
 		groq`*[_type=="portfolioCard" && postSlug.current == $slug][0] {
             _id,
             title,

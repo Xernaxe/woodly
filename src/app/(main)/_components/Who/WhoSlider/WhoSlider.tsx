@@ -4,16 +4,12 @@ import React from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { IPortfolioCard } from '@/app/(main)/_types/IPortfolioCard';
 
 export const WhoSlider = ({
-	projectsImages
+	projectsImages,
 }: {
-	projectsImages: {
-		_id: string;
-		slug: string;
-		title: string;
-		mainImg: { imgSrc: string; imgAlt: string };
-	}[];
+	projectsImages: Pick<IPortfolioCard, '_id' | 'slug' | 'title' | 'mainImg'>[];
 }) => {
 	const [emblaRef] = useEmblaCarousel();
 	return (

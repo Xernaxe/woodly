@@ -1,11 +1,18 @@
 # Woodly
 
+Created a website for an Interior Designer company's needs, focusing on simplicity and ease of maintenance for the client.
+
+<ul>
+    <li>Implemented Sanity CMS in order to allow the client to add and store content in a convenient manner.</li>
+    <li>Adopted a Server-Side Generation approach to enhance the website's efficiency.</li>
+    <li>Thoroughly tested the website's performance, SEO and accessibility with multiple tools.</li>
+    <li>Collaborated with an UI/UX designer on creating the design for the website.</li>
+</ul>
+
 **Link to project:** https://woodly.vercel.app/
 ![Website preview](/websitePreview.png)
 
 ## Tech stack:
-
-**Tech used:** 
 
 <ul>
     <li>Next.Js</li>
@@ -20,3 +27,6 @@
 Google PageSpeed Insights
 ![Insights for mobile](./Insights_Mobile.webp)
 ![Insights for desktop](./Insights_Desktop.webp)
+
+Yellow Lab Tools
+![Yellow Lab Tools](./YellowLabTools.png)

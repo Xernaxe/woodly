@@ -15,7 +15,6 @@ export const PortfolioCards = ({
 	) => {
 		return (
 			<Link
-				aria-label={`Acceseaza pagina ${card.title}`}
 				href={`/portofoliu/${card.slug}`}
 				key={card._id}
 				className='flex flex-col-reverse gap-4 tablet:flex-row tablet:justify-between tablet:items-center desktop:gap-6'

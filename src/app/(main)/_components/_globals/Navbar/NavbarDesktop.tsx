@@ -28,7 +28,6 @@ export const NavbarDesktop = ({ navLinks }: { navLinks: INavLinks[] }) => {
 							>
 							<Link
 								aria-label={`Acceseaza pagina ${link.name}`}
-								tabIndex={index + 1}
 								href={link.href}
 								className='font-outfit uppercase text-white leading-loose mx-4 group-hover:font-semibold'
 							>

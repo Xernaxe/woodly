@@ -7,7 +7,6 @@ import { IPortfolioCard } from '../../_types/IPortfolioCard';
 
 export async function OurWork() {
 	const portfolioCards: IPortfolioCard[] = await getAllProjects();
-	// console.log(portfolioCards[0]);
 	return (
 		<section className='paddingsY flex flex-col items-center bg-black '>
 			<div className='flex flex-col items-center'>

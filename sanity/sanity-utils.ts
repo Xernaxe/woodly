@@ -56,7 +56,6 @@ export async function getAllProjectsImages(): Promise<
 export async function getPortfolioCardBySlug(
 	slug: string
 ): Promise<IPortfolioCard> {
-	console.log(slug);
 	return client.fetch(
 		groq`*[_type=="portfolioCard" && postSlug.current == $slug][0] {
             _id,

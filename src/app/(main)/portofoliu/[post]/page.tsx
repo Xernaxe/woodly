@@ -12,7 +12,6 @@ type Props = {
 export default async function Page({ params }: Props) {
 	const slug = params.post;
 	const portfolioCard: IPortfolioCard = await getPortfolioCardBySlug(slug);
-	console.log(portfolioCard);
 	return (
 		<>
 			<SingleHero {...portfolioCard}/>

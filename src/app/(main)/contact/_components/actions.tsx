@@ -39,10 +39,8 @@ export async function submitFormAction(
 	await new Promise((resolve, reject) => {
 		transporter.verify(function (error, success) {
 			if (error) {
-				console.log(error);
 				reject(error);
 			} else {
-				console.log('Server is ready to take our messages');
 				resolve(success);
 			}
 		});
@@ -63,10 +61,8 @@ export async function submitFormAction(
 	await new Promise((resolve, reject) => {
 		transporter.sendMail(mailOptions, function (errorz, info) {
 			if (errorz) {
-				console.log(errorz);
 				reject(errorz);
 			} else {
-				console.log('Email Sent');
 				resolve(true);
 			}
 		});

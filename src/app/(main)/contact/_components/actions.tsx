@@ -27,14 +27,14 @@ export async function submitFormAction(
 		const transporter = nodemailer.createTransport({
 			service: 'gmail',
 			auth: {
-				user: process.env.NEXT_PUBLIC_EMAIL_USER,
-				pass: process.env.NEXT_PUBLIC_EMAIL_PASSWORD,
+				user: process.env.EMAIL_USER,
+				pass: process.env.EMAIL_PASSWORD,
 			},
 		});
 
 		const mailOptions = {
-			from: process.env.NEXT_PUBLIC_EMAIL_USER,
-			to: process.env.NEXT_PUBLIC_EMAIL_USER,
+			from: process.env.EMAIL_USER,
+			to: process.env.EMAIL_USER,
 			subject: 'FORMULAR WEBSITE - EMAIL NOU',
 			text: 
             `

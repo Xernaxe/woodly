@@ -55,7 +55,7 @@ export async function submitFormAction(
 		};
 		console.log(mailOptions);
 
-		transporter.sendMail(mailOptions, function (errorz, info) {
+		await transporter.sendMail(mailOptions, function (errorz, info) {
 			if (errorz) {
 				console.log(errorz);
 			} else {

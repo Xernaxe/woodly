@@ -23,6 +23,7 @@ export async function submitFormAction(
 	const phoneNumber = formData.get('phoneNumber') as string;
 	const message = formData.get('message');
 
+	console.log('SUNT IN submitFormAction top level')
 	try {
 		const transporter = nodemailer.createTransport({
 			service: 'gmail',
@@ -31,7 +32,8 @@ export async function submitFormAction(
 				pass: process.env.EMAIL_PASSWORD,
 			},
 		});
-
+		console.log('SUNT IN try')
+		
 		const mailOptions = {
 			from: process.env.EMAIL_USER,
 			to: process.env.EMAIL_USER,
@@ -44,7 +46,8 @@ export async function submitFormAction(
             Mesaj: ${message}
             `,
 		};
-
+		console.log(mailOptions)
+		
 		transporter.sendMail(mailOptions, function (errorz, info) {
 			if (errorz) {
 				console.log(errorz);
